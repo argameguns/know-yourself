@@ -1,0 +1,143 @@
+{
+  "test": "attachment-style",
+  "scales": [
+    {
+      "id": "anxiety",
+      "name": "Relationship Anxiety",
+      "bands": [
+        {
+          "range": [
+            0,
+            25
+          ],
+          "label": "low",
+          "text": "You rarely worry about whether you're loved enough or whether your partner is pulling away. Confidence in your relationships comes naturally, without needing constant reassurance of love.\n\nThis gives you a stable emotional foundation for relationships, free of excessive anxiety about their future."
+        },
+        {
+          "range": [
+            26,
+            50
+          ],
+          "label": "moderate",
+          "text": "You sometimes worry about the stability of a relationship, especially in moments of uncertainty, but you usually regain your inner calm quickly.\n\nThis is a typical level of anxiety that doesn't stand in the way of building healthy relationships."
+        },
+        {
+          "range": [
+            51,
+            75
+          ],
+          "label": "elevated",
+          "text": "You often worry about whether your partner loves you enough and need regular reassurance of it. Silence or distance from a partner can trigger anxiety even without a real reason.\n\nThis isn't a character flaw — it's often tied to past relationship experiences. Recognizing this pattern and directly communicating your needs to your partner helps reduce the intensity of the anxiety."
+        },
+        {
+          "range": [
+            76,
+            100
+          ],
+          "label": "high",
+          "text": "Fear of losing a relationship or being abandoned is often present in your emotional background, even when your partner is acting consistently. You may interpret neutral signals as a sign of distance.\n\nThis is a deep-seated emotional pattern that often responds well to therapeutic work. Understanding your own triggers and, if needed, support from a professional can significantly improve the quality of your relationships and your inner peace."
+        }
+      ],
+      "questions": [
+        {
+          "id": "anxiety_q1",
+          "text": "I often worry about whether my partner loves me enough."
+        },
+        {
+          "id": "anxiety_q2",
+          "text": "My partner's silence makes me anxious."
+        },
+        {
+          "id": "anxiety_q3",
+          "text": "I need regular reassurance of my partner's feelings."
+        },
+        {
+          "id": "anxiety_q4",
+          "text": "I'm afraid my partner might leave me."
+        }
+      ]
+    },
+    {
+      "id": "avoidance",
+      "name": "Avoidance of Closeness",
+      "bands": [
+        {
+          "range": [
+            0,
+            25
+          ],
+          "label": "low",
+          "text": "You feel comfortable with deep emotional closeness and readily trust your partner with your feelings and needs.\n\nThis gives you a foundation for warm, open relationships without emotional barriers."
+        },
+        {
+          "range": [
+            26,
+            50
+          ],
+          "label": "moderate",
+          "text": "You're capable of closeness, though you sometimes need personal space or time alone within a relationship.\n\nThis is a healthy balance between closeness and personal autonomy."
+        },
+        {
+          "range": [
+            51,
+            75
+          ],
+          "label": "elevated",
+          "text": "You value independence in relationships and can feel uncomfortable with overly intense emotional closeness or dependence on a partner.\n\nThis is often tied to a need to maintain a sense of control over your own emotional space. Gradually and deliberately opening up to your partner, at your own pace, helps build deeper relationships without feeling your autonomy is threatened."
+        },
+        {
+          "range": [
+            76,
+            100
+          ],
+          "label": "high",
+          "text": "You tend to keep emotional distance and feel uncomfortable when a relationship becomes too close or dependent. Self-sufficiency matters more to you than emotional merging with a partner.\n\nThis is often a protective pattern formed in the past. Recognizing this pattern is the first step toward choosing when closeness is safe, rather than automatically avoiding it. Working with a professional can help you tell a real threat apart from a habitual avoidance response."
+        }
+      ],
+      "questions": [
+        {
+          "id": "avoidance_q1",
+          "text": "I feel uncomfortable when a partner becomes too emotionally close."
+        },
+        {
+          "id": "avoidance_q2",
+          "text": "I value personal space more than constant closeness in a relationship."
+        },
+        {
+          "id": "avoidance_q3",
+          "text": "I find it hard to trust a partner with my vulnerable feelings."
+        },
+        {
+          "id": "avoidance_q4",
+          "text": "I prefer self-reliance, even within a relationship."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "secure",
+      "condition": "low anxiety + low avoidance",
+      "title": "Secure Attachment Style",
+      "text": "You combine trust in your partner with comfort in closeness, without excessive anxiety or a need for distance. This is a foundation for stable, mutually supportive relationships in which both partners feel safe."
+    },
+    {
+      "id": "anxious_preoccupied",
+      "condition": "high anxiety + low avoidance",
+      "title": "Anxious-Preoccupied Style",
+      "text": "You seek deep closeness but often worry about its stability. This combination is typical of people who value relationships extremely highly, sometimes at the cost of their own emotional peace. Directly communicating your needs to your partner helps a great deal."
+    },
+    {
+      "id": "dismissive_avoidant",
+      "condition": "low anxiety + high avoidance",
+      "title": "Dismissive-Avoidant Style",
+      "text": "You're self-assured and rarely anxious about relationships, but you keep emotional distance to protect your personal autonomy. This combination gives you inner stability at the cost of emotional depth, if the distance becomes excessive."
+    },
+    {
+      "id": "fearful_avoidant",
+      "condition": "high anxiety + high avoidance",
+      "title": "Fearful-Avoidant Style",
+      "text": "You simultaneously crave closeness and fear it — this creates an inner conflict between the desire for connection and the fear of being vulnerable. This is a complex but common pattern that often responds well to working with a professional who specializes in attachment."
+    }
+  ]
+}

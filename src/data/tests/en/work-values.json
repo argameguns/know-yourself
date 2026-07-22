@@ -1,0 +1,265 @@
+{
+  "test": "work-values",
+  "scales": [
+    {
+      "id": "stability",
+      "name": "Stability",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low importance",
+          "text": "Predictability and guaranteed stability aren't a priority for you at work. You're willing to accept risk and uncertainty in exchange for other benefits.\n\nThis opens the door to entrepreneurial or project-based ways of working, where stability takes a back seat to opportunity."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate importance",
+          "text": "You value a certain degree of stability, but you're willing to trade it for interesting opportunities or growth.\n\nThis gives you a balance between security and a willingness to take sensible risks."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high importance",
+          "text": "Stability, predictable income, and confidence about the future are key factors for you when choosing a job.\n\nThis is a natural and healthy value that fits well with roles at established organizations or in structured fields."
+        }
+      ],
+      "questions": [
+        {
+          "id": "stability_q1",
+          "text": "A stable income matters more to me than a high but unpredictable one."
+        },
+        {
+          "id": "stability_q2",
+          "text": "I prefer predictable work."
+        },
+        {
+          "id": "stability_q3",
+          "text": "Job security influences my choice of work."
+        },
+        {
+          "id": "stability_q4",
+          "text": "I avoid risky career decisions."
+        }
+      ]
+    },
+    {
+      "id": "autonomy",
+      "name": "Autonomy",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low importance",
+          "text": "You feel comfortable in a structured environment with clear instructions and don't need much freedom in decision-making.\n\nThis fits well with roles where precisely executing established processes matters most."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate importance",
+          "text": "You value a certain degree of independence at work, but you're also comfortable in a structured environment with clear boundaries.\n\nThis gives you flexibility between independence and working within a team's rules."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high importance",
+          "text": "Independence in decision-making and the freedom to shape your own workflow are critically important to you.\n\nThis naturally leads toward highly self-directed roles — running your own business, freelancing, or positions with broad authority."
+        }
+      ],
+      "questions": [
+        {
+          "id": "autonomy_q1",
+          "text": "Making my own decisions at work matters to me."
+        },
+        {
+          "id": "autonomy_q2",
+          "text": "I prefer freedom over rigid instructions."
+        },
+        {
+          "id": "autonomy_q3",
+          "text": "Independence at work motivates me more than stability does."
+        },
+        {
+          "id": "autonomy_q4",
+          "text": "I'm uncomfortable when someone constantly monitors my work."
+        }
+      ]
+    },
+    {
+      "id": "impact",
+      "name": "Impact and Meaning",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low importance",
+          "text": "A sense of large-scale impact on the world or society isn't a defining factor for you in choosing work.\n\nYou likely value doing specific tasks well over pursuing a broader mission."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate importance",
+          "text": "You value work that has some sense of purpose and usefulness, though it isn't the sole deciding factor.\n\nThis gives you a balance between practicality in your choices and a need for meaningful work."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high importance",
+          "text": "Feeling that your work has real impact and meaning is critical to your motivation.\n\nThis naturally leads toward mission-driven roles, social entrepreneurship, or fields with a visible social outcome."
+        }
+      ],
+      "questions": [
+        {
+          "id": "impact_q1",
+          "text": "It matters to me that my work has real meaning for others."
+        },
+        {
+          "id": "impact_q2",
+          "text": "I want to see a positive impact from my work on the world."
+        },
+        {
+          "id": "impact_q3",
+          "text": "Meaningless work demotivates me, even if it pays well."
+        },
+        {
+          "id": "impact_q4",
+          "text": "A company's mission matters to me when choosing a job."
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth and Learning",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low importance",
+          "text": "Constantly learning new skills and professional growth aren't a priority — you value stability in the knowledge and approaches that already work well for you.\n\nThis fits well with roles that call for deep expertise in one area rather than constantly changing direction."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate importance",
+          "text": "You value the chance to grow, though you don't need constant new challenges to stay motivated.\n\nThis gives you a steady, gradual approach to professional development."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high importance",
+          "text": "Continuous learning, new challenges, and professional growth are key drivers of your motivation at work.\n\nThis naturally leads toward dynamic fields that keep opening up new directions for development."
+        }
+      ],
+      "questions": [
+        {
+          "id": "growth_q1",
+          "text": "I strive to keep learning new things at work."
+        },
+        {
+          "id": "growth_q2",
+          "text": "A lack of professional development demotivates me."
+        },
+        {
+          "id": "growth_q3",
+          "text": "New challenges motivate me more than routine does."
+        },
+        {
+          "id": "growth_q4",
+          "text": "I choose work that gives me room to grow."
+        }
+      ]
+    },
+    {
+      "id": "recognition",
+      "name": "Recognition",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low importance",
+          "text": "External recognition and status are secondary to you — the internal satisfaction of a job well done matters more.\n\nThis gives you steady internal motivation, independent of outside evaluation."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate importance",
+          "text": "Recognition is nice to have but isn't the main driver of your motivation — you see it as a bonus rather than a necessity.\n\nThis gives you a healthy balance between internal and external motivation."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high importance",
+          "text": "Recognition of your achievements, status, and external validation of your work matter to your motivation and sense of success.\n\nThis is a natural value that plays out well in roles with clear success metrics and public visibility of results."
+        }
+      ],
+      "questions": [
+        {
+          "id": "recognition_q1",
+          "text": "Having my achievements recognized matters to me."
+        },
+        {
+          "id": "recognition_q2",
+          "text": "It matters to me that others value my work."
+        },
+        {
+          "id": "recognition_q3",
+          "text": "Status and respect motivate me at work."
+        },
+        {
+          "id": "recognition_q4",
+          "text": "I look for external confirmation of my successes."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "purposeful_independent",
+      "condition": "high autonomy + high impact",
+      "title": "The Independent Missionary",
+      "text": "You seek both freedom in decision-making and a sense that your work matters. This combination often leads to entrepreneurship in socially meaningful directions or independent consulting work with a clear mission."
+    },
+    {
+      "id": "steady_specialist",
+      "condition": "high stability + low growth",
+      "title": "The Steady Specialist",
+      "text": "Stability matters more to you than constant change and new challenges. You seek deep expertise in one field, finding satisfaction in reliability rather than continuous forward motion."
+    },
+    {
+      "id": "ambitious_achiever",
+      "condition": "high recognition + high growth",
+      "title": "The Ambitious Achiever",
+      "text": "Recognition and continuous development together shape your motivation. You want to see progress and get confirmation of its value — this naturally leads toward competitive, dynamic career tracks."
+    }
+  ]
+}

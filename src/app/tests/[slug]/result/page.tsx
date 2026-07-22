@@ -3,19 +3,19 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { tests } from "@/lib/testsCatalog";
 import type { TestResult } from "@/lib/scoring";
+import { getDictionary, type Dictionary } from "@/lib/i18n/dictionaries";
+import { getLocale } from "@/lib/i18n/getLocale";
 
-function NotFoundResult({ slug }: { slug: string }) {
+function NotFoundResult({ slug, dict }: { slug: string; dict: Dictionary["result"] }) {
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-center gap-4 px-5 py-24 text-center">
-      <h1 className="font-fraunces text-2xl text-ink">Результат не знайдено</h1>
-      <p className="text-ink-soft">
-        Схоже, це посилання застаріло або результат ще не збережено.
-      </p>
+      <h1 className="font-fraunces text-2xl text-ink">{dict.notFoundTitle}</h1>
+      <p className="text-ink-soft">{dict.notFoundText}</p>
       <Link
         href={`/tests/${slug}`}
         className="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-pine"
       >
-        Пройти тест ще раз
+        {dict.retakeTest}
       </Link>
     </div>
   );
@@ -34,8 +34,11 @@ export default async function ResultPage({
   const meta = tests.find((test) => test.slug === slug);
   if (!meta) notFound();
 
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+
   if (!attemptId) {
-    return <NotFoundResult slug={slug} />;
+    return <NotFoundResult slug={slug} dict={dict.result} />;
   }
 
   const attempt = await prisma.attempt.findUnique({
@@ -44,7 +47,7 @@ export default async function ResultPage({
   });
 
   if (!attempt || attempt.test.slug !== slug) {
-    return <NotFoundResult slug={slug} />;
+    return <NotFoundResult slug={slug} dict={dict.result} />;
   }
 
   const result = attempt.result as unknown as TestResult;
@@ -52,9 +55,9 @@ export default async function ResultPage({
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-5 py-12 desktop:px-8">
       <div className="mb-10 flex items-center justify-between gap-4">
-        <h1 className="font-fraunces text-3xl text-ink">{meta.name}</h1>
+        <h1 className="font-fraunces text-3xl text-ink">{dict.testNames[slug]}</h1>
         <Link href="/tests" className="text-sm text-ink-soft transition-colors hover:text-ink">
-          ← Усі тести
+          {dict.result.allTests}
         </Link>
       </div>
 
@@ -76,7 +79,9 @@ export default async function ResultPage({
 
       {result.portrait && (
         <div className="mt-10 rounded-2xl bg-ochre-soft p-8">
-          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-ochre">Портрет</p>
+          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-ochre">
+            {dict.result.portraitLabel}
+          </p>
           <h2 className="mb-3 font-fraunces text-2xl text-ink">{result.portrait.title}</h2>
           <p className="whitespace-pre-line text-base leading-relaxed text-ink-soft">
             {result.portrait.text}
@@ -89,7 +94,7 @@ export default async function ResultPage({
           href="/tests"
           className="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-pine"
         >
-          Пройти інший тест
+          {dict.result.takeAnother}
         </Link>
       </div>
     </div>

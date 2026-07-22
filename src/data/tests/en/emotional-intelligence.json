@@ -1,0 +1,211 @@
+{
+  "test": "emotional-intelligence",
+  "scales": [
+    {
+      "id": "self_awareness",
+      "name": "Self-Awareness",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "You often find it hard to accurately recognize and name your own emotions as they arise. Reactions can feel like something that just happens, without a clear understanding of why.\n\nPracticing a brief pause before reacting and trying to put a word to the emotion — even approximately — gradually builds this skill."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You generally understand what you're feeling, although complex or mixed emotions can sometimes be hard to pin down right away.\n\nThis is a healthy foundation of self-awareness, with room to deepen it in more complicated emotional situations."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "You're good at recognizing your own emotions as they arise and understanding what triggered them.\n\nThis is a valuable foundation for emotional regulation and mindful decision-making, especially under stress."
+        }
+      ],
+      "questions": [
+        {
+          "id": "self_awareness_q1",
+          "text": "I easily recognize my emotions as they arise."
+        },
+        {
+          "id": "self_awareness_q2",
+          "text": "I understand what triggers my emotional reactions."
+        },
+        {
+          "id": "self_awareness_q3",
+          "text": "It's clear to me why I feel the way I do."
+        },
+        {
+          "id": "self_awareness_q4",
+          "text": "I can put into words what I'm feeling."
+        }
+      ]
+    },
+    {
+      "id": "self_regulation",
+      "name": "Self-Regulation",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Strong emotions often drive your reaction in the moment, and it can be hard to hold back an impulsive response even when you know you should pause.\n\nSimple techniques — taking a deep breath, a brief pause before responding — gradually strengthen this skill without suppressing the emotions themselves."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're able to manage your reactions in most situations, although intense emotions sometimes still get the better of you.\n\nThis is a solid baseline skill, with room to grow in especially stressful situations."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "You manage your emotional reactions well even under stress, retaining the ability to act thoughtfully.\n\nThis is a valuable skill for roles that require composure and level-headedness under pressure."
+        }
+      ],
+      "questions": [
+        {
+          "id": "self_regulation_q1",
+          "text": "I can calm myself down even in a stressful situation."
+        },
+        {
+          "id": "self_regulation_q2",
+          "text": "I rarely act impulsively under the influence of emotion."
+        },
+        {
+          "id": "self_regulation_q3",
+          "text": "I can hold back a sharp reaction during a conflict."
+        },
+        {
+          "id": "self_regulation_q4",
+          "text": "I manage to stay calm under pressure."
+        }
+      ]
+    },
+    {
+      "id": "empathy",
+      "name": "Empathy",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "You find it hard to intuitively pick up on other people's emotional states, especially when they aren't expressed directly in words.\n\nDeliberate practice — asking directly about feelings, paying attention to nonverbal cues — helps develop this skill over time."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You generally pick up on the general emotional state of those around you, though finer nuances sometimes go unnoticed.\n\nThis is a healthy foundation of empathy, with room to deepen your attention to nonverbal cues."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "You naturally sense other people's emotional states, even when unexpressed, and genuinely empathize with them.\n\nThis is a valuable skill for relationships and roles that require understanding other people's needs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "empathy_q1",
+          "text": "I easily pick up on other people's emotional states."
+        },
+        {
+          "id": "empathy_q2",
+          "text": "I notice when someone is uncomfortable, even without words."
+        },
+        {
+          "id": "empathy_q3",
+          "text": "I can easily put myself in someone else's shoes."
+        },
+        {
+          "id": "empathy_q4",
+          "text": "I genuinely empathize with the feelings of those around me."
+        }
+      ]
+    },
+    {
+      "id": "social_skills",
+      "name": "Social Skills",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Building and maintaining relationships, resolving interpersonal conflicts, or communicating effectively can feel difficult.\n\nThis is a skill that develops with practice — small, consistent steps in communication gradually build confidence."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You generally communicate effectively and build relationships well, though difficult, conflict-laden situations can be challenging.\n\nThis is a solid social skill, with room to grow in tense interpersonal situations."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "You build relationships effectively, communicate clearly, and skillfully navigate complex interpersonal situations.\n\nThis is a valuable skill for leadership, teamwork, and communication-focused roles."
+        }
+      ],
+      "questions": [
+        {
+          "id": "social_skills_q1",
+          "text": "I find it easy to build relationships with new people."
+        },
+        {
+          "id": "social_skills_q2",
+          "text": "I know how to resolve interpersonal conflicts."
+        },
+        {
+          "id": "social_skills_q3",
+          "text": "I communicate my thoughts to others clearly."
+        },
+        {
+          "id": "social_skills_q4",
+          "text": "I find it easy to connect with different kinds of people."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "emotionally_grounded",
+      "condition": "high self_awareness + high self_regulation",
+      "title": "The Emotionally Grounded",
+      "text": "You understand your own emotions well and, at the same time, skillfully manage your reactions to them. This combination provides stability and composure even in stressful situations."
+    },
+    {
+      "id": "empathic_communicator",
+      "condition": "high empathy + high social_skills",
+      "title": "The Empathic Communicator",
+      "text": "A deep understanding of other people's emotions pairs, in you, with skillful communication. This makes you a natural mediator and someone people find it easy to build trusting relationships with."
+    }
+  ]
+}

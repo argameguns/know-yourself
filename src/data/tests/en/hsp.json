@@ -1,0 +1,79 @@
+{
+  "test": "hsp",
+  "scales": [
+    {
+      "id": "sensitivity",
+      "name": "Sensory and Emotional Sensitivity",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Loud sounds, bright light, or a richly stimulating environment don't cause you much discomfort. You handle intense external stimulation well without feeling overwhelmed.\n\nThis gives you resilience in fast-paced, noisy environments where others might tire more quickly."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "moderate",
+          "text": "You're moderately sensitive to sensory stimuli and the emotional atmosphere around you, though you generally handle intense stimulation without significant discomfort.\n\nThis gives you a balanced sensitivity that doesn't get in the way of functioning in different environments."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "elevated",
+          "text": "You're noticeably more sensitive than the average person to sensory stimuli — bright light, loud sounds, strong smells — as well as to the emotional atmosphere in a room.\n\nThis isn't a flaw — it often comes with deeper processing of information and a fine perception of nuance. Deliberately managing your sensory load (breaks in a quiet place, controlling the intensity of stimuli) helps you use this sensitivity as a resource."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're deeply sensitive to sensory and emotional stimuli. A richly stimulating environment — noise, crowds, bright light — quickly leads to a feeling of overload and exhaustion.\n\nThis is often linked to uniquely deep information processing, fine aesthetic perception, and high empathy. Planning regular periods of quiet and recovery isn't a luxury — it's a necessary condition for maintaining productivity and emotional balance."
+        }
+      ],
+      "questions": [
+        {
+          "id": "sensitivity_q1",
+          "text": "Loud sounds or bright light tire me out quickly."
+        },
+        {
+          "id": "sensitivity_q2",
+          "text": "I sharply sense the emotional atmosphere in a room."
+        },
+        {
+          "id": "sensitivity_q3",
+          "text": "Rich sensory experiences quickly overwhelm me."
+        },
+        {
+          "id": "sensitivity_q4",
+          "text": "I notice details that others miss."
+        },
+        {
+          "id": "sensitivity_q5",
+          "text": "I need time alone to recover after an intense day."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "deep_processor",
+      "condition": "high sensitivity",
+      "title": "The Deep Processor",
+      "text": "Your heightened sensitivity to sensory and emotional signals comes with deeper information processing and a fine perception of details others may miss. This is a valuable resource, provided you deliberately manage your own load and regularly recover in a calm environment."
+    },
+    {
+      "id": "resilient_processor",
+      "condition": "low sensitivity",
+      "title": "The Resilient Processor",
+      "text": "You handle intense sensory and emotional stimulation well without feeling overwhelmed. This gives you resilience in fast-paced, eventful environments."
+    }
+  ]
+}

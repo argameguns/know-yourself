@@ -25,7 +25,7 @@
   --color-ochre-soft: var(--ochre-soft);
   --color-line: var(--line);
   --font-sans: var(--font-inter);
-  --font-fraunces: var(--font-fraunces);
+  --font-fraunces: var(--font-fraunces-latin), var(--font-fraunces-cyrillic), serif;
 }
 
 body {

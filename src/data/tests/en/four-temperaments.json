@@ -1,0 +1,211 @@
+{
+  "test": "four-temperaments",
+  "scales": [
+    {
+      "id": "sanguine",
+      "name": "Sanguine",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "The ease, spontaneity, and social energy characteristic of the sanguine temperament aren't your dominant traits.\n\nYou likely express other temperament traits more strongly."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You have a moderate share of sanguine ease and sociability, combined with other temperament traits.\n\nThis gives you a balanced level of energy in social situations."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You're naturally cheerful, sociable, and quick to adapt to new people and situations. Enthusiasm and optimism are your defining traits.\n\nThis is a valuable trait for roles that call for energetic communication, with room to benefit from building more consistency in following through on long-term tasks."
+        }
+      ],
+      "questions": [
+        {
+          "id": "sanguine_q1",
+          "text": "I make new acquaintances easily."
+        },
+        {
+          "id": "sanguine_q2",
+          "text": "I'm sociable and cheerful by nature."
+        },
+        {
+          "id": "sanguine_q3",
+          "text": "New situations excite me more than they scare me."
+        },
+        {
+          "id": "sanguine_q4",
+          "text": "I adapt easily to new people and circumstances."
+        }
+      ]
+    },
+    {
+      "id": "choleric",
+      "name": "Choleric",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "The intense drive and assertive energy of the choleric temperament aren't your dominant traits.\n\nYou likely approach goals at a calmer, more gradual pace."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You have a moderate share of drive and decisiveness, combined with other temperament traits.\n\nThis gives you a balanced level of assertiveness in pursuing goals."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You're energetic, goal-driven, and decisive, with a natural inclination to lead and achieve results quickly.\n\nThis is a valuable trait for roles that require initiative and assertiveness, with room to benefit from building more patience in situations that call for a slower pace."
+        }
+      ],
+      "questions": [
+        {
+          "id": "choleric_q1",
+          "text": "I move energetically toward the goals I set."
+        },
+        {
+          "id": "choleric_q2",
+          "text": "I enjoy taking on a leadership role."
+        },
+        {
+          "id": "choleric_q3",
+          "text": "I make decisions and act quickly."
+        },
+        {
+          "id": "choleric_q4",
+          "text": "I persistently pursue the results I want."
+        }
+      ]
+    },
+    {
+      "id": "melancholic",
+      "name": "Melancholic",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "The deep reflection and inclination toward detailed analysis characteristic of the melancholic temperament aren't your dominant traits.\n\nYou likely approach decisions faster and with less attention to detail."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You have a moderate inclination toward reflection and attention to detail, combined with other temperament traits.\n\nThis gives you a balanced approach between depth of analysis and speed of action."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You tend toward deep reflection, are attentive to detail, and strive to understand things deeply rather than superficially.\n\nThis is a valuable trait for analytical and creative work, with the benefit of watching that over-analysis doesn't turn into persistent doubt."
+        }
+      ],
+      "questions": [
+        {
+          "id": "melancholic_q1",
+          "text": "I tend to analyze situations deeply."
+        },
+        {
+          "id": "melancholic_q2",
+          "text": "I notice details that others might miss."
+        },
+        {
+          "id": "melancholic_q3",
+          "text": "Understanding the deeper essence of things matters to me."
+        },
+        {
+          "id": "melancholic_q4",
+          "text": "I tend to reflect on my own actions."
+        }
+      ]
+    },
+    {
+      "id": "phlegmatic",
+      "name": "Phlegmatic",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "The calm even-temperedness and slow, steady pace characteristic of the phlegmatic temperament aren't your dominant traits.\n\nYou likely react to situations with more energy and speed."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You have a moderate share of calm and even-temperedness, combined with other temperament traits.\n\nThis gives you a balanced level of stability in how you react to events."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You're naturally calm, even-tempered, and rarely swayed by emotional impulses. Stability and patience are your defining traits.\n\nThis is a valuable trait for roles that require composure and consistency, with the benefit of consciously stepping up initiative where a situation calls for quick action."
+        }
+      ],
+      "questions": [
+        {
+          "id": "phlegmatic_q1",
+          "text": "I stay calm even in tense situations."
+        },
+        {
+          "id": "phlegmatic_q2",
+          "text": "I'm comfortable with a stable, predictable pace."
+        },
+        {
+          "id": "phlegmatic_q3",
+          "text": "I'm rarely swept up by emotional impulses."
+        },
+        {
+          "id": "phlegmatic_q4",
+          "text": "Patience is one of my strong traits."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "dynamic_leader",
+      "condition": "high sanguine + high choleric",
+      "title": "The Dynamic Leader",
+      "text": "Sociability pairs, in you, with goal-driven assertiveness. You naturally inspire people while decisively driving toward results — a powerful combination for leadership roles."
+    },
+    {
+      "id": "thoughtful_stabilizer",
+      "condition": "high melancholic + high phlegmatic",
+      "title": "The Thoughtful Stabilizer",
+      "text": "Deep reflection pairs, in you, with calm even-temperedness. You make decisions thoughtfully and stay stable even in difficult circumstances — this makes you a reliable anchor for those around you."
+    }
+  ]
+}

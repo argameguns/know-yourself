@@ -1,0 +1,375 @@
+{
+  "test": "big-five",
+  "scales": [
+    {
+      "id": "openness",
+      "name": "Openness to Experience",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You prefer tried-and-true solutions and the familiar order of things. New ideas and abstract concepts interest you less than concrete, practical outcomes. This isn't a limitation of thought — it's more a deliberate orientation toward stability and predictability as a foundation for effective work.\n\nThis trait works well in environments where precision and adherence to established procedures matter. At the same time, it's worth recognizing that sometimes it's useful to deliberately step outside the familiar — not because it's wrong, but because it expands the toolkit you have available for solving problems."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You tend to stick with proven approaches, though you're periodically willing to consider a new idea if it has practical value. Abstract theories and art interest you moderately — you're drawn more to what can be applied right away.\n\nThis trait gives you steadiness in routine tasks and stability in decision-making. Developing flexibility of thought gradually, in small steps, lets you add a broader view of possibilities to your existing stability."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You combine curiosity about the new with a sensible regard for proven solutions. You're capable of getting absorbed in an abstract idea, but you value practicality and concrete results just as much. This gives you flexibility — you can adapt to both stable environments and change.\n\nPeople with this balance often thrive in roles that require creativity and execution discipline at the same time — for example, where you need to both come up with a solution and see it through to implementation."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You're drawn to new ideas, unusual perspectives, and intellectual challenges. You readily explore alternative viewpoints and rarely settle for the first explanation if you sense there's more to dig into.\n\nThis trait makes you a valuable source of ideas and someone who notices patterns others miss. Keep in mind that a constant search for the new can sometimes get in the way of finishing things — a deliberate balance with execution discipline helps here."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're deeply interested in ideas, art, philosophy, and unconventional ways of thinking. Familiar frameworks and ready-made answers tend to bore you rather than comfort you — you want to understand the essence of things, not just carry out what's assigned.\n\nThis is a strong asset in creative, research, and strategic roles. The risk is spreading your attention across too many directions at once. Deliberately choosing a few directions to dive into fully helps turn breadth of interest into real results."
+        }
+      ],
+      "questions": [
+        {
+          "id": "openness_q1",
+          "text": "I enjoy trying new approaches to familiar tasks."
+        },
+        {
+          "id": "openness_q2",
+          "text": "I'm drawn to abstract ideas and theories."
+        },
+        {
+          "id": "openness_q3",
+          "text": "I love art, music, or literature that goes beyond the conventional."
+        },
+        {
+          "id": "openness_q4",
+          "text": "I find it interesting to consider alternative viewpoints on the same issue."
+        }
+      ]
+    },
+    {
+      "id": "conscientiousness",
+      "name": "Conscientiousness",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You're oriented more toward the moment than the long-term plan. Rigid structures and detailed schedules often feel confining, and you prefer flexibility and spontaneity in decision-making.\n\nThis gives you ease in adapting to unpredictable situations. At the same time, it's worth noticing when a lack of structure keeps you from finishing things that matter — even a light system of reminders or deadlines can meaningfully boost your effectiveness without costing you your natural flexibility."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You prefer a flexible approach to tasks, though you're capable of sticking to a plan when it truly matters. Organization isn't your natural strong suit, but you can develop it where there's clear motivation.\n\nYour advantage is the ability to switch gears quickly and avoid getting stuck in excessive planning. Using simple tools (to-do lists, reminders) can help offset a natural tendency to put off routine or uninteresting tasks."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of being organized when a task calls for it, but you don't turn planning into an end in itself. This gives you a sensible balance between discipline and flexibility — you get things done without losing your ability to adapt.\n\nPeople with this profile tend to handle both projects that require precise execution and situations that call for changing the plan on the fly."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You're organized, reliable, and inclined to see things through to completion. Deadlines, plans, and clear structures don't weigh you down — if anything, they help you focus and work effectively.\n\nThis makes you someone others can count on for complex, multi-stage tasks. Watch that your drive for order doesn't grow into excessive perfectionism that slows down decisions where speed matters more than perfection."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "Discipline, thoroughness, and responsibility are natural traits for you. You set high standards for yourself and move steadily toward your goals, even when it takes sustained effort without immediate results.\n\nThis is a strong trait for roles that require precision and reliability. The main risk is excessive demandingness toward yourself and others, which can turn into a constant sense of not being good enough. Consciously acknowledging a finished result, even an imperfect one, helps keep this trait productive rather than exhausting."
+        }
+      ],
+      "questions": [
+        {
+          "id": "conscientiousness_q1",
+          "text": "I plan things out carefully in advance."
+        },
+        {
+          "id": "conscientiousness_q2",
+          "text": "I finish what I start, even when it's boring."
+        },
+        {
+          "id": "conscientiousness_q3",
+          "text": "Meeting deadlines matters to me."
+        },
+        {
+          "id": "conscientiousness_q4",
+          "text": "I keep my belongings and space organized."
+        }
+      ]
+    },
+    {
+      "id": "extraversion",
+      "name": "Extraversion",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You draw energy from being alone or in a quiet, small circle of people. Loud gatherings and intense social interaction tend to drain you rather than energize you, and you need time to recover after being socially active.\n\nThis gives you a capacity for deep, focused work and attentive, thoughtful one-on-one conversation. Socializing doesn't have to be your strong suit — it's important to find environments that value quality of interaction over quantity."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You feel comfortable in small groups or one-on-one conversations, but prolonged social activity gradually wears you down. You need regular alone time to restore your inner resources.\n\nThis trait pairs well with work that requires focus and depth rather than constant public interaction. When planning your day, it's worth deliberately building in pauses after intense social episodes."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You feel equally comfortable alone and in company, depending on the situation and your mood. Social activity is neither draining nor a must-have need — you adapt flexibly to the context.\n\nThis gives you versatility: you can work effectively both on a team and independently, without significant discomfort in either format."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "Communication and social activity energize you. You readily take part in group discussions, meet new people easily, and feel comfortable being the center of attention.\n\nThis is a strong trait for roles involving communication, leadership, and public interaction. It's worth remembering that others may need a quieter pace of conversation, and deliberately leaving room for silence in a discussion."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're a pronounced extravert: energetic, sociable, and proactive in conversation. Group dynamics, new acquaintances, and active interaction with people are your natural, preferred environment.\n\nThis is a valuable trait for roles that require inspiring or leading others, or building connections. The risk is not leaving enough time for solitary reflection. Regular periods of solitude, even brief ones, help balance this energy with deeper thinking through decisions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "extraversion_q1",
+          "text": "Being around people gives me energy."
+        },
+        {
+          "id": "extraversion_q2",
+          "text": "I'm comfortable being the center of attention."
+        },
+        {
+          "id": "extraversion_q3",
+          "text": "I meet new people easily."
+        },
+        {
+          "id": "extraversion_q4",
+          "text": "I feel more energized in company than alone."
+        }
+      ]
+    },
+    {
+      "id": "agreeableness",
+      "name": "Agreeableness",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You're direct, results-oriented, and not inclined to give up your position just to preserve harmony. Competition and open confrontation don't make you uncomfortable if they lead to a better outcome.\n\nThis is a strong trait in negotiations and situations that call for firmness. At the same time, it's worth being aware of how your directness comes across to others — a brief pause before responding can sometimes help get your point across without triggering unnecessary resistance."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You value honesty over diplomacy and are willing to stand up for your position even when it creates friction. Trust isn't automatic for you — it has to be earned.\n\nThis gives you resilience in tough negotiations or conflict situations. Developing more flexibility in communication, without losing your principles, helps you build longer, deeper relationships where that matters."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of both cooperating and standing up for your own interests depending on the situation. You don't seek out conflict, but you don't avoid it either when it's needed for a fair outcome.\n\nThis balance lets you work effectively on a team while maintaining healthy personal boundaries."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You tend toward cooperation, trust, and looking out for others' interests. Harmony in relationships matters to you, and you're often willing to compromise to preserve good relations.\n\nThis is a valuable trait for teamwork and building long-term relationships. Watch that a desire to avoid conflict doesn't lead to consistently ignoring your own needs."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "Empathy, care for others, and a drive toward harmony are defining traits for you. You naturally trust people and easily put yourself in another's shoes, which makes you a caring and reliable person to talk to.\n\nThis is a strong asset in roles that require support and care for others. The main risk is excessive accommodation at the expense of your own interests. Practicing stating your own needs directly, without guilt, helps keep this trait healthy."
+        }
+      ],
+      "questions": [
+        {
+          "id": "agreeableness_q1",
+          "text": "I tend to trust people."
+        },
+        {
+          "id": "agreeableness_q2",
+          "text": "Maintaining harmony in relationships matters to me."
+        },
+        {
+          "id": "agreeableness_q3",
+          "text": "I'm willing to set aside my own interests for others."
+        },
+        {
+          "id": "agreeableness_q4",
+          "text": "I empathize with other people's struggles."
+        }
+      ]
+    },
+    {
+      "id": "neuroticism",
+      "name": "Emotional Stability",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low (high stability)",
+          "text": "You stay calm even in stressful situations and rarely give in to anxiety or sharp emotional swings. Difficulties feel like problems to solve, not threats to your inner balance.\n\nThis is a valuable trait for roles that require composure under pressure. Keep in mind that people around you may experience stress more intensely than you do — showing empathy for their state helps avoid coming across as indifferent."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You generally stay balanced, and serious stress throws you off only rarely and briefly. Emotional reactions are present, but they rarely turn into prolonged anxiety or strain.\n\nThis gives you a solid foundation for working under moderate pressure, with enough resilience for most everyday situations."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You experience stress and anxiety as a normal part of life, but you usually find a way to cope with them. Emotional fluctuations are present but don't dominate your ability to function.\n\nThis is a typical, balanced profile — with room to develop specific self-regulation techniques for moments of heightened load."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You tend to react more sharply to stress, uncertainty, or criticism than most people. Anxious thoughts can linger longer than you'd like, affecting your mood and decisions.\n\nThis isn't a weakness — it often comes with heightened sensitivity to nuances in a situation that others might miss. Emotional-regulation practices (mindful breathing, structured planning, talking to a supportive person) help turn this sensitivity into a manageable resource rather than a source of exhaustion."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You feel anxiety, stress, or mood swings deeply and often, even in situations that aren't objectively critical. Emotions can feel intense and take a long time to let go of.\n\nIt's important to understand: this is a temperamental trait, not a character flaw. It often comes with high sensitivity and depth of feeling. Building stable support practices (regular sleep, physical activity, talking to a professional if needed) substantially helps manage the intensity of these reactions, without suppressing the sensitivity itself, which is also often a source of empathy and creativity."
+        }
+      ],
+      "questions": [
+        {
+          "id": "neuroticism_q1",
+          "text": "I often worry even without a good reason."
+        },
+        {
+          "id": "neuroticism_q2",
+          "text": "My mood can shift sharply over the course of a day."
+        },
+        {
+          "id": "neuroticism_q3",
+          "text": "Stressful situations stay with me emotionally for a long time."
+        },
+        {
+          "id": "neuroticism_q4",
+          "text": "I'm prone to anxious thoughts."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "architect",
+      "condition": "high conscientiousness + high openness",
+      "title": "The Architect of Ideas",
+      "text": "Your profile combines a deep curiosity for new ideas with the discipline to carry them through to reality. This is a rare and valuable combination: many people either generate ideas or implement other people's — you're able to do both consistently. You shine most in projects that call for both an unconventional solution and a clear plan for putting it into practice."
+    },
+    {
+      "id": "steady_connector",
+      "condition": "high agreeableness + low neuroticism",
+      "title": "The Steady Connector",
+      "text": "Your emotional stability, paired with a natural care for others, makes you someone people turn to in difficult moments. You stay calm where others lose their footing, while genuinely taking others' feelings into account. This combination is valuable in roles that require supporting a team or mediating conflicts."
+    },
+    {
+      "id": "driven_analyst",
+      "condition": "high conscientiousness + low agreeableness",
+      "title": "The Driven Analyst",
+      "text": "You combine high discipline with a willingness to stand up for your position even when it creates friction. Results matter more to you than comfortable harmony in the moment. This makes you effective in roles that require direct decisions and firm adherence to standards, especially where compromise would hurt the quality of the outcome."
+    },
+    {
+      "id": "quiet_explorer",
+      "condition": "high openness + low extraversion",
+      "title": "The Quiet Explorer",
+      "text": "A rich inner world of ideas is paired with a preference for solitary, focused work over group activity. You open up more deeply alone with a problem than in a loud discussion. This combination is common among people who make a significant contribution through individual expertise rather than public presence."
+    },
+    {
+      "id": "resilient_pragmatist",
+      "condition": "low openness + low neuroticism",
+      "title": "The Resilient Pragmatist",
+      "text": "You value proven solutions and stay calm even under pressure. This combination gives you reliability where stability is needed: you don't chase novelty for its own sake, and you don't lose your footing over surprises. Your strength is consistency and predictability in execution."
+    },
+    {
+      "id": "social_catalyst",
+      "condition": "high extraversion + high agreeableness",
+      "title": "The Social Catalyst",
+      "text": "The energy you get from socializing is paired with genuine care for others — a rare combination that makes you a natural at rallying people around a shared goal. You're not just sociable, you're attentive to the needs of those around you, which makes your presence on a team a distinctly positive one."
+    },
+    {
+      "id": "sensitive_creator",
+      "condition": "high openness + high neuroticism",
+      "title": "The Sensitive Creator",
+      "text": "A rich imagination and depth of feeling go hand in hand for you. You feel both the beauty of ideas and the anxiety of uncertainty more sharply than others. This combination often underlies deep creative or analytical work, provided you find healthy ways to live with the intensity of your own emotions."
+    },
+    {
+      "id": "grounded_organizer",
+      "condition": "high conscientiousness + low neuroticism",
+      "title": "The Grounded Organizer",
+      "text": "Discipline and emotional resilience are a rare combination that makes you someone people rely on in a crisis. You not only see things through to the end, but do so without undue stress for yourself or those around you. This is the foundation of natural leadership in complex, long-running projects."
+    }
+  ]
+}

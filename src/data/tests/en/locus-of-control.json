@@ -1,0 +1,87 @@
+{
+  "test": "locus-of-control",
+  "scales": [
+    {
+      "id": "locus",
+      "name": "Locus of Control",
+      "poles": [
+        "External",
+        "Internal"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "strongly external",
+          "text": "You tend to explain events in your life through external factors — luck, circumstances, or the actions of other people — rather than your own effort.\n\nThis can protect you from excessive self-blame over failures, but it can also downplay your role in your own successes. Noticing specific actions of your own that influenced an outcome, even small ones, gradually strengthens your sense of influence over your own life."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderately external",
+          "text": "You more often attribute outcomes to circumstances or other people, though you recognize your own contribution in some situations.\n\nThis gives you a degree of psychological protection from excessive self-criticism, with room to build more confidence in your own influence over outcomes."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You realistically assess when an outcome depends on your own actions and when it depends on external circumstances, without swinging to either extreme.\n\nThis is a healthy, balanced view of causality in life."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderately internal",
+          "text": "You tend to see a connection between your own actions and outcomes, while still recognizing the role of circumstances where it's warranted.\n\nThis gives you a healthy sense of influence over your own life, balanced by a realistic acknowledgment of external factors."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "strongly internal",
+          "text": "You're deeply convinced that the outcomes of your life depend mainly on your own effort, decisions, and actions.\n\nThis is a powerful motivational trait that supports perseverance and proactivity. At the same time, it's worth remembering that some circumstances really are outside your control — excessive self-blame for external setbacks can be draining. Realistically acknowledging the limits of your own influence keeps this trait healthy."
+        }
+      ],
+      "questions": [
+        {
+          "id": "locus_q1",
+          "text": "My success depends mainly on my own effort."
+        },
+        {
+          "id": "locus_q2",
+          "text": "I'm able to influence what happens in my life."
+        },
+        {
+          "id": "locus_q3",
+          "text": "The outcomes of my actions depend more on me than on luck."
+        },
+        {
+          "id": "locus_q4",
+          "text": "I'm responsible for my failures just as much as for my successes."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "proactive_realist",
+      "condition": "high locus",
+      "title": "The Proactive Realist",
+      "text": "You see yourself as an active author of your own life and consistently put in effort to achieve the outcomes you want. This gives you strong internal motivation and resilience in the face of hardship, as long as you maintain a realistic view of the limits of your own influence."
+    },
+    {
+      "id": "adaptive_observer",
+      "condition": "low locus",
+      "title": "The Adaptive Observer",
+      "text": "You recognize the significant role of circumstances and external factors in shaping the outcomes of your life. This can protect you from excessive self-blame, while it's also worth consciously noticing the moments where your own actions genuinely determine the outcome."
+    }
+  ]
+}

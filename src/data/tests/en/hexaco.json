@@ -1,0 +1,421 @@
+{
+  "test": "hexaco",
+  "scales": [
+    {
+      "id": "honesty_humility",
+      "name": "Honesty-Humility",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You take a pragmatic view of rules and status, willing to use favorable circumstances even when it borders on manipulation. Flattery, strategic behavior, and the pursuit of advantage don't cause you much moral discomfort as long as they get results.\n\nThis can be an asset in competitive environments where tactical flexibility matters. At the same time, it's worth staying aware of how this kind of behavior affects others' trust over the long run — reputation is built slowly and lost quickly."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You're capable of acting pragmatically for your own benefit, though not as a matter of habit. Status and recognition matter to you to some degree, and you don't always pass up an advantageous opportunity just because it's not entirely above board.\n\nConsciously choosing when it's worth trading short-term gain for long-term trust will help you protect your reputation without losing your practical edge."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You combine sincerity with sensible pragmatism. You're capable of acting honestly in most situations, but you're no naive idealist — you understand when strategic flexibility is called for.\n\nThis balance lets you build trust with others while staying flexible enough for tough negotiations or competitive situations."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "Sincerity and modesty are important values for you. You rarely use people for your own advantage and don't chase excessive recognition or status.\n\nThis makes you a reliable partner in relationships and at work. Keep in mind that excessive modesty can sometimes get in the way of earning recognition you deserve — being able to talk about your own achievements without exaggerating is just as valuable a skill."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You deeply value fairness and sincerity, and avoid any form of manipulation or using others for gain. Status and material rewards matter far less to you than doing what's inwardly right.\n\nThis is a strong moral foundation that earns other people's trust. The risk is vulnerability to people who exploit that honesty. Being sensibly careful about who you trust doesn't contradict your values — it protects them."
+        }
+      ],
+      "questions": [
+        {
+          "id": "honesty_humility_q1",
+          "text": "I would not use people to get what I want."
+        },
+        {
+          "id": "honesty_humility_q2",
+          "text": "Status and recognition are not my main goals."
+        },
+        {
+          "id": "honesty_humility_q3",
+          "text": "I value fairness even when it's not to my advantage."
+        },
+        {
+          "id": "honesty_humility_q4",
+          "text": "I'm not inclined to flatter people for my own benefit."
+        }
+      ]
+    },
+    {
+      "id": "emotionality",
+      "name": "Emotionality",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You rarely feel fear, anxiety, or a need for emotional support from others. Physical and emotional independence come naturally to you — you rely primarily on yourself.\n\nThis gives you steadiness in crisis situations that call for acting without hesitation. At the same time, it's worth consciously noticing the emotional needs of people close to you, who may experience things more intensely than you do."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You experience emotions in a fairly restrained way and rarely need active support from others in difficult situations. You're capable of empathy, but you don't sink deeply into other people's emotional states.\n\nThis gives you balance under stress, with room to grow deeper empathic engagement where it matters for your relationships."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You experience emotions moderately — enough to empathize with others, but not so intensely that it interferes with functioning in difficult situations.\n\nThis is a balanced profile that lets you both support people close to you emotionally and stay steady under pressure."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You're sensitive to emotions — your own and other people's — and empathize easily with others. Fear and anxiety register more sharply for you than for the average person, especially in situations of uncertainty.\n\nThis is a valuable trait for relationships that call for empathy. Developing emotional-regulation techniques helps you use this sensitivity as a resource rather than a source of exhaustion."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You feel emotions deeply — both your own and other people's. Your need for emotional connection with those close to you is strong, and anxiety or fear can arise even in relatively safe situations.\n\nThis often comes with high empathy and a deep capacity to understand others. Practices that support emotional stability (support from people close to you, or a professional if needed) help you live with this intensity without burning out."
+        }
+      ],
+      "questions": [
+        {
+          "id": "emotionality_q1",
+          "text": "I easily feel anxious in uncertain situations."
+        },
+        {
+          "id": "emotionality_q2",
+          "text": "I need emotional support from people close to me."
+        },
+        {
+          "id": "emotionality_q3",
+          "text": "I feel other people's emotions intensely."
+        },
+        {
+          "id": "emotionality_q4",
+          "text": "Physical danger triggers strong fear in me."
+        }
+      ]
+    },
+    {
+      "id": "extraversion_h",
+      "name": "Extraversion",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You feel best alone or with a very small circle of people. Social activity drains you, and you avoid being the center of attention.\n\nThis gives you depth in individual work. It's important to find environments that value the quality of your contribution rather than constant public presence."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You're comfortable in small groups, but prolonged social activity gradually wears you down.\n\nRegular time to recharge alone helps you maintain the energy for the social moments that matter."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You adapt flexibly to both independent work and group interaction, depending on the context.\n\nThis gives you versatility across different work and social settings."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "Communication and social activity energize you. You feel confident in groups and readily initiate contact.\n\nThis is a valuable trait for communication- and leadership-oriented roles."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're vividly sociable, energized by company, and naturally take on the role of connector within a group.\n\nIt's worth setting aside time for solitary reflection, so that this energy is complemented by depth of thought."
+        }
+      ],
+      "questions": [
+        {
+          "id": "extraversion_h_q1",
+          "text": "I like being at the center of social activity."
+        },
+        {
+          "id": "extraversion_h_q2",
+          "text": "I feel confident speaking in front of a group."
+        },
+        {
+          "id": "extraversion_h_q3",
+          "text": "Meeting new people energizes me."
+        },
+        {
+          "id": "extraversion_h_q4",
+          "text": "I rarely feel lonely in company."
+        }
+      ]
+    },
+    {
+      "id": "agreeableness_h",
+      "name": "Agreeableness",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You're direct and easily irritated when others act dishonestly or incompetently. Forgiveness doesn't come easily — grudges stick around for a long time.\n\nThis gives you firmness in standing up for your position. Developing more flexibility in how you respond to minor provocations helps you save your energy for the conflicts that truly matter."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You're willing to compromise, but you don't automatically forgive unfair treatment.\n\nThis balance gives you healthy boundaries in relationships, with room to grow more tolerance where it's warranted."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of both forgiving and standing your ground depending on the situation, without a clear lean toward either side.\n\nThis gives you flexibility in interpersonal conflicts."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You tend toward tolerance and forgiveness, even when others don't behave at their best. Anger rarely lingers long.\n\nThis is a valuable trait for long-term relationships. It's important not to let this gentleness turn into a pattern of ignoring your own boundaries."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're remarkably tolerant and forgive even significant offenses easily. Anger rarely grows into a lasting grudge.\n\nThis is a real strength for reconciliation and maintaining harmony. Watch that excessive forgiveness doesn't end up encouraging others to repeat unfair behavior."
+        }
+      ],
+      "questions": [
+        {
+          "id": "agreeableness_h_q1",
+          "text": "I easily forgive people's mistakes."
+        },
+        {
+          "id": "agreeableness_h_q2",
+          "text": "I rarely hold a grudge for long."
+        },
+        {
+          "id": "agreeableness_h_q3",
+          "text": "I try to understand others' motives, even when they've let me down."
+        },
+        {
+          "id": "agreeableness_h_q4",
+          "text": "My anger fades quickly."
+        }
+      ]
+    },
+    {
+      "id": "conscientiousness_h",
+      "name": "Conscientiousness",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You're oriented toward the moment rather than the long-term plan. Organization and thoroughness aren't natural traits for you.\n\nLightweight reminder systems can help offset this tendency without sacrificing your natural spontaneity."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You're capable of getting organized when there's clear motivation, but it takes conscious effort.\n\nSimple planning tools help you see important things through to completion."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You're organized exactly as much as a task requires — no more, no less.\n\nThis gives you a practical balance between discipline and flexibility."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You're organized, thorough, and reliably see things through to completion.\n\nWatch that your drive for order doesn't turn into excessive perfectionism."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "Discipline and thoroughness are defining traits for you. You move steadily toward your goals even on long projects.\n\nConsciously acknowledging a finished result, even an imperfect one, helps keep this trait productive."
+        }
+      ],
+      "questions": [
+        {
+          "id": "conscientiousness_h_q1",
+          "text": "I approach tasks in an organized way."
+        },
+        {
+          "id": "conscientiousness_h_q2",
+          "text": "I follow through on commitments I've made."
+        },
+        {
+          "id": "conscientiousness_h_q3",
+          "text": "Seeing things through to completion matters to me."
+        },
+        {
+          "id": "conscientiousness_h_q4",
+          "text": "I avoid impulsive decisions."
+        }
+      ]
+    },
+    {
+      "id": "openness_h",
+      "name": "Openness to Experience",
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "low",
+          "text": "You prefer proven, concrete solutions over abstract ideas or art.\n\nThis gives you stability in practical work, with room to gradually broaden your perspective."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "below average",
+          "text": "You're moderately curious about new ideas, but focus mainly on practical application.\n\nThis gives you steadiness in getting tasks done, balanced by a modest openness to the new."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "average",
+          "text": "You combine curiosity about ideas with a practical approach to putting them into action.\n\nThis gives you flexibility between the creative and the executional."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "above average",
+          "text": "You're drawn to new ideas, art, and unconventional perspectives.\n\nThis makes you a valuable source of ideas, benefiting from being balanced by execution discipline."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "high",
+          "text": "You're deeply interested in ideas, art, and philosophical questions, driven to understand the essence of things.\n\nConsciously choosing a few directions to dive into deeply helps turn breadth of interest into real results."
+        }
+      ],
+      "questions": [
+        {
+          "id": "openness_h_q1",
+          "text": "I'm interested in philosophical or abstract questions."
+        },
+        {
+          "id": "openness_h_q2",
+          "text": "I enjoy exploring new ideas."
+        },
+        {
+          "id": "openness_h_q3",
+          "text": "Art and beauty matter to me."
+        },
+        {
+          "id": "openness_h_q4",
+          "text": "I'm open to unconventional solutions."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "principled_leader",
+      "condition": "high honesty_humility + high conscientiousness",
+      "title": "The Principled Leader",
+      "text": "Your sincerity is paired with discipline and reliability. You not only act honestly, but consistently see things through to the end — a rare combination that earns trust and respect from a team."
+    },
+    {
+      "id": "empathic_guardian",
+      "condition": "high emotionality + high agreeableness_h",
+      "title": "The Empathic Guardian",
+      "text": "Deep sensitivity comes paired with tolerance and forgiveness in you. You naturally feel other people's pain and easily forgive their imperfections — this makes you a pillar of support for people close to you in difficult moments."
+    },
+    {
+      "id": "pragmatic_strategist",
+      "condition": "low honesty_humility + high conscientiousness",
+      "title": "The Pragmatic Strategist",
+      "text": "Discipline comes paired with a flexible, sometimes shrewdly advantageous approach to rules. You efficiently achieve your goals by using the full range of tactics available to you."
+    },
+    {
+      "id": "calm_independent",
+      "condition": "low emotionality + low extraversion_h",
+      "title": "The Calm Loner",
+      "text": "Emotional independence comes paired with a preference for solitary work over group interaction. You rarely need outside support and function best at your own pace."
+    },
+    {
+      "id": "visionary_connector",
+      "condition": "high openness_h + high extraversion_h",
+      "title": "The Visionary Connector",
+      "text": "Curiosity about new ideas comes paired with the energy you get from socializing. You naturally inspire others with your thinking and easily draw people into new directions."
+    }
+  ]
+}

@@ -1,14 +1,10 @@
 import Link from "next/link";
-import {
-  categories,
-  categoryColor,
-  categoryLabel,
-  tests,
-  type Category,
-} from "@/lib/testsCatalog";
+import { categoryColor, categoryIds, tests, type Category } from "@/lib/testsCatalog";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getLocale } from "@/lib/i18n/getLocale";
 
 function isCategory(value: string | undefined): value is Category {
-  return value !== undefined && categories.some((cat) => cat.id === value);
+  return value !== undefined && categoryIds.some((id) => id === value);
 }
 
 export default async function TestsPage({
@@ -18,6 +14,8 @@ export default async function TestsPage({
 }) {
   const { category } = await searchParams;
   const activeCategory = isCategory(category) ? category : null;
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
 
   const visibleTests = activeCategory
     ? tests.filter((test) => test.category === activeCategory)
@@ -26,9 +24,9 @@ export default async function TestsPage({
   return (
     <div className="mx-auto w-full max-w-5xl flex-1 px-5 py-12 desktop:px-8">
       <div className="mb-8 flex items-center justify-between gap-4">
-        <h1 className="font-fraunces text-3xl text-ink">Усі тести</h1>
+        <h1 className="font-fraunces text-3xl text-ink">{dict.testsPage.title}</h1>
         <Link href="/" className="text-sm text-ink-soft transition-colors hover:text-ink">
-          ← На головну
+          {dict.testsPage.backHome}
         </Link>
       </div>
 
@@ -41,23 +39,23 @@ export default async function TestsPage({
               : "border-line text-ink-soft hover:border-ink hover:text-ink"
           }`}
         >
-          Усі
+          {dict.testsPage.allFilter}
         </Link>
-        {categories.map((cat) => {
-          const isActive = activeCategory === cat.id;
+        {categoryIds.map((id) => {
+          const isActive = activeCategory === id;
           return (
             <Link
-              key={cat.id}
-              href={`/tests?category=${cat.id}`}
+              key={id}
+              href={`/tests?category=${id}`}
               className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 isActive
-                  ? categoryColor[cat.id] === "pine"
+                  ? categoryColor[id] === "pine"
                     ? "border-pine bg-pine text-paper"
                     : "border-ochre bg-ochre text-paper"
                   : "border-line text-ink-soft hover:border-ink hover:text-ink"
               }`}
             >
-              {cat.name}
+              {dict.categories[id].name}
             </Link>
           );
         })}
@@ -76,13 +74,15 @@ export default async function TestsPage({
                 <span className="w-8 shrink-0 font-fraunces text-sm text-ink-soft">
                   {String(originalIndex + 1).padStart(2, "0")}
                 </span>
-                <span className="flex-1 font-fraunces text-base text-ink">{test.name}</span>
+                <span className="flex-1 font-fraunces text-base text-ink">
+                  {dict.testNames[test.slug]}
+                </span>
                 <span
                   className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
                     color === "pine" ? "bg-pine-soft text-pine" : "bg-ochre-soft text-ochre"
                   }`}
                 >
-                  {categoryLabel[test.category]}
+                  {dict.categories[test.category].name}
                 </span>
               </Link>
             </li>
@@ -91,9 +91,7 @@ export default async function TestsPage({
       </ol>
 
       {visibleTests.length === 0 && (
-        <p className="py-8 text-center text-sm text-ink-soft">
-          У цій категорії поки немає тестів.
-        </p>
+        <p className="py-8 text-center text-sm text-ink-soft">{dict.testsPage.emptyCategory}</p>
       )}
     </div>
   );

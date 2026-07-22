@@ -1,0 +1,115 @@
+{
+  "test": "grit",
+  "scales": [
+    {
+      "id": "consistency",
+      "name": "Consistency of Interests",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Your interests and goals often shift over time — something that excited you a few months ago may no longer hold much appeal. New ideas easily pull you away from current projects.\n\nThis gives you flexibility and openness to new things, with the benefit of deliberately choosing a few priorities for sustained focus where it matters for the outcome."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You maintain interest in your goals for a while, though new directions sometimes pull you away from current tasks.\n\nThis gives you a balance between sustained focus and openness to new opportunities."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Your interests and goals stay stable over long periods. You rarely abandon what you've started for a new idea that seems more appealing at first glance.\n\nThis is a valuable trait for long-term projects that require sustained commitment to a single direction."
+        }
+      ],
+      "questions": [
+        {
+          "id": "consistency_q1",
+          "text": "My interests stay stable over long periods of time."
+        },
+        {
+          "id": "consistency_q2",
+          "text": "I rarely abandon something I've started for a new idea."
+        },
+        {
+          "id": "consistency_q3",
+          "text": "I stay focused on one goal for a long time."
+        },
+        {
+          "id": "consistency_q4",
+          "text": "New enthusiasms rarely distract me from my current goals."
+        }
+      ]
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance of Effort",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Setbacks and failures often lead you to reconsider or even abandon a goal you've set. A prolonged struggle without visible progress feels draining.\n\nThis isn't a weakness — breaking big goals into smaller, visible steps helps sustain motivation over the long run."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're able to keep moving toward a goal despite setbacks, although prolonged failure can weaken your motivation.\n\nThis gives you a solid base of perseverance, with room to grow for especially difficult, long-running projects."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You keep moving toward a goal even after serious setbacks or prolonged difficulty. Obstacles are experienced as part of the path, not a signal to stop.\n\nThis is a powerful trait for achieving long-term, ambitious goals. It's worth watching that perseverance doesn't turn into stubbornly continuing down a dead-end path — periodically reassessing your goal remains important."
+        }
+      ],
+      "questions": [
+        {
+          "id": "perseverance_q1",
+          "text": "I keep working toward a goal even when it's hard."
+        },
+        {
+          "id": "perseverance_q2",
+          "text": "Setbacks don't make me give up."
+        },
+        {
+          "id": "perseverance_q3",
+          "text": "I push through obstacles on the way to important goals."
+        },
+        {
+          "id": "perseverance_q4",
+          "text": "I finish what I start, even if it takes a lot of time."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "steady_achiever",
+      "condition": "high consistency + high perseverance",
+      "title": "The Steady Achiever",
+      "text": "You combine stable interests with the ability to push through hardship on the way to a goal. This is the classic combination behind significant long-term achievement in any field."
+    },
+    {
+      "id": "adaptive_explorer",
+      "condition": "low consistency + high perseverance",
+      "title": "The Adaptive Explorer",
+      "text": "You persistently see things through to the end, but you often change the direction of your interests. This combination is typical of people who achieve results across several fields in succession rather than one over a lifetime."
+    }
+  ]
+}

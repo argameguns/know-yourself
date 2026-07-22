@@ -1,0 +1,79 @@
+{
+  "test": "self-esteem",
+  "scales": [
+    {
+      "id": "self_esteem",
+      "name": "Self-Esteem",
+      "bands": [
+        {
+          "range": [
+            0,
+            25
+          ],
+          "label": "low",
+          "text": "You often doubt your own worth and tend to see more flaws in yourself than strengths. Criticism, even minor, can feel like confirmation of these doubts.\n\nThis is a common and not permanent state — self-esteem can change over time and with experience. Practicing noticing your own achievements, even small ones, and working with a professional can meaningfully improve this feeling."
+        },
+        {
+          "range": [
+            26,
+            50
+          ],
+          "label": "below average",
+          "text": "You have moderate doubts about your own worth, though you feel more confident in stable, supportive conditions.\n\nThis leaves room for growth — focusing on your own strengths and achievements gradually strengthens this feeling."
+        },
+        {
+          "range": [
+            51,
+            75
+          ],
+          "label": "above average",
+          "text": "You generally accept yourself and recognize your own worth, though you sometimes doubt yourself in difficult or stressful situations.\n\nThis is a healthy, solid base of self-esteem with a little room to grow more confident amid unpredictable circumstances."
+        },
+        {
+          "range": [
+            76,
+            100
+          ],
+          "label": "high",
+          "text": "You confidently accept yourself, recognize your own worth, and rarely doubt your own dignity, even in the face of criticism or setbacks.\n\nThis is a solid psychological foundation that supports resilience in the face of hardship. It's worth keeping a healthy dose of humility so that confidence doesn't turn into inattention to feedback from others."
+        }
+      ],
+      "questions": [
+        {
+          "id": "self_esteem_q1",
+          "text": "On the whole, I'm satisfied with myself."
+        },
+        {
+          "id": "self_esteem_q2",
+          "text": "I feel that I have a number of good qualities."
+        },
+        {
+          "id": "self_esteem_q3",
+          "text": "I'm able to do things as well as most other people."
+        },
+        {
+          "id": "self_esteem_q4",
+          "text": "I take a positive attitude toward myself."
+        },
+        {
+          "id": "self_esteem_q5",
+          "text": "I rarely feel that I am worthless."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "grounded_confidence",
+      "condition": "high self-esteem",
+      "title": "Grounded Confidence",
+      "text": "You accept yourself, strengths and weaknesses alike, maintaining a stable inner foundation even in difficult situations. This isn't arrogance — it's a calm recognition of your own worth."
+    },
+    {
+      "id": "growing_confidence",
+      "condition": "low self-esteem",
+      "title": "Growing Self-Esteem",
+      "text": "You're at a stage where self-doubt shows up more often than confidence. This isn't a permanent state — deliberately working on noticing your own achievements and, if needed, support from a professional can meaningfully change this picture over time."
+    }
+  ]
+}

@@ -21,6 +21,8 @@
  * }
  */
 
+import type { Locale } from "@/lib/i18n/locales";
+
 export interface Band {
   range: [number, number];
   label: string;
@@ -101,10 +103,11 @@ function portraitMatches(portrait: Portrait, scaleScores: Record<string, number>
 
 export async function getTestResult(
   testSlug: string,
-  scaleScores: Record<string, number>
+  scaleScores: Record<string, number>,
+  locale: Locale = "uk"
 ): Promise<TestResult> {
   const testData = (
-    (await import(`@/data/tests/${testSlug}.json`)) as { default: TestData }
+    (await import(`@/data/tests/${locale}/${testSlug}.json`)) as { default: TestData }
   ).default;
 
   const scaleResults: ScaleResult[] = Object.entries(scaleScores).flatMap(

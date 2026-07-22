@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { categories, categoryColor, categoryLabel, tests, type Category } from "@/lib/testsCatalog";
+import { categoryColor, categoryIds, tests, type Category } from "@/lib/testsCatalog";
+import { getDictionary, type Dictionary } from "@/lib/i18n/dictionaries";
+import { getLocale } from "@/lib/i18n/getLocale";
 
 const categoryIcon: Record<Category, React.ReactNode> = {
   personality: <PersonalityIcon />,
@@ -8,13 +10,15 @@ const categoryIcon: Record<Category, React.ReactNode> = {
   relationships: <RelationshipsIcon />,
 };
 
-const radarExample = [
-  { label: "Відкр.", value: 78 },
-  { label: "Сумлін.", value: 62 },
-  { label: "Екстра.", value: 45 },
-  { label: "Доброз.", value: 70 },
-  { label: "Стабільн.", value: 55 },
-];
+function radarExampleFor(labels: Dictionary["home"]["radarLabels"]) {
+  return [
+    { label: labels.openness, value: 78 },
+    { label: labels.conscientiousness, value: 62 },
+    { label: labels.extraversion, value: 45 },
+    { label: labels.agreeableness, value: 70 },
+    { label: labels.neuroticism, value: 55 },
+  ];
+}
 
 function LogoMark() {
   return (
@@ -78,7 +82,13 @@ function RelationshipsIcon() {
   );
 }
 
-function RadarChart({ data }: { data: { label: string; value: number }[] }) {
+function RadarChart({
+  data,
+  ariaLabel,
+}: {
+  data: { label: string; value: number }[];
+  ariaLabel: string;
+}) {
   const size = 260;
   const center = size / 2;
   const maxRadius = 90;
@@ -111,7 +121,7 @@ function RadarChart({ data }: { data: { label: string; value: number }[] }) {
       viewBox={`0 0 ${size} ${size}`}
       className="h-56 w-56 overflow-visible desktop:h-64 desktop:w-64"
       role="img"
-      aria-label="Приклад радар-діаграми результатів тесту Big Five"
+      aria-label={ariaLabel}
     >
       <circle cx={center} cy={center} r={maxRadius} fill="var(--color-pine-soft)" opacity={0.5} />
 
@@ -178,7 +188,11 @@ function RadarChart({ data }: { data: { label: string; value: number }[] }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const locale = await getLocale();
+  const dict = await getDictionary(locale);
+  const radarExample = radarExampleFor(dict.home.radarLabels);
+
   return (
     <div className="flex flex-1 flex-col">
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-5 py-5 desktop:px-8">
@@ -189,52 +203,54 @@ export default function Home() {
           <span className="font-fraunces text-lg font-medium text-ink">Know Yourself</span>
         </div>
         <p className="text-right text-[11px] text-ink-soft desktop:text-sm">
-          Бібліотека тестів · безкоштовно
+          {dict.common.tagline}
         </p>
       </header>
 
       <section className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-5 pb-16 pt-4 desktop:flex-row desktop:items-center desktop:gap-16 desktop:px-8 desktop:pb-24 desktop:pt-10">
         <div className="flex flex-col gap-6 desktop:flex-1">
           <h1 className="font-fraunces text-4xl leading-[1.15] text-ink desktop:text-5xl">
-            Дізнайся, з чого ти <span className="italic text-pine">насправді</span> складаєшся
+            {dict.home.heroTitleBefore}
+            <span className="italic text-pine">{dict.home.heroTitleEmphasis}</span>
+            {dict.home.heroTitleAfter}
           </h1>
           <p className="max-w-md text-base text-ink-soft desktop:text-lg">
-            15 наукових психологічних тестів про особистість, кар&apos;єру, сильні сторони і
-            стосунки. Без реєстрації, без оплати — результат одразу.
+            {dict.home.heroSubtitle}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/onboarding"
               className="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-pine"
             >
-              Почати опитування
+              {dict.home.ctaStart}
             </Link>
             <Link
               href="/tests"
               className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-ink"
             >
-              Переглянути всі тести
+              {dict.home.ctaBrowseAll}
             </Link>
           </div>
         </div>
 
         <div className="flex justify-center desktop:flex-1 desktop:justify-end">
           <div className="flex flex-col items-center gap-2">
-            <RadarChart data={radarExample} />
-            <p className="text-xs text-ink-soft">Приклад профілю · Big Five</p>
+            <RadarChart data={radarExample} ariaLabel={dict.home.radarAriaLabel} />
+            <p className="text-xs text-ink-soft">{dict.home.radarCaption}</p>
           </div>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-5xl px-5 py-12 desktop:px-8">
-        <h2 className="mb-6 font-fraunces text-2xl text-ink">Категорії</h2>
+        <h2 className="mb-6 font-fraunces text-2xl text-ink">{dict.home.categoriesHeading}</h2>
         <div className="grid grid-cols-2 gap-4 desktop:grid-cols-4">
-          {categories.map((cat) => {
-            const color = categoryColor[cat.id];
+          {categoryIds.map((id) => {
+            const color = categoryColor[id];
+            const cat = dict.categories[id];
             return (
               <Link
-                key={cat.id}
-                href={`/tests?category=${cat.id}`}
+                key={id}
+                href={`/tests?category=${id}`}
                 className={`rounded-2xl p-5 transition-opacity hover:opacity-90 ${
                   color === "pine" ? "bg-pine-soft" : "bg-ochre-soft"
                 }`}
@@ -244,7 +260,7 @@ export default function Home() {
                     color === "pine" ? "bg-pine text-paper" : "bg-ochre text-paper"
                   }`}
                 >
-                  {categoryIcon[cat.id]}
+                  {categoryIcon[id]}
                 </div>
                 <p className="font-fraunces text-base text-ink">{cat.name}</p>
                 <p className="mt-1 text-xs text-ink-soft">{cat.description}</p>
@@ -255,7 +271,7 @@ export default function Home() {
       </section>
 
       <section id="tests" className="mx-auto w-full max-w-5xl px-5 py-12 desktop:px-8">
-        <h2 className="mb-6 font-fraunces text-2xl text-ink">Тести</h2>
+        <h2 className="mb-6 font-fraunces text-2xl text-ink">{dict.home.testsHeading}</h2>
         <ol className="divide-y divide-line border-y border-line">
           {tests.map((test, index) => {
             const color = categoryColor[test.category];
@@ -268,13 +284,15 @@ export default function Home() {
                   <span className="w-8 shrink-0 font-fraunces text-sm text-ink-soft">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="flex-1 font-fraunces text-base text-ink">{test.name}</span>
+                  <span className="flex-1 font-fraunces text-base text-ink">
+                    {dict.testNames[test.slug]}
+                  </span>
                   <span
                     className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
                       color === "pine" ? "bg-pine-soft text-pine" : "bg-ochre-soft text-ochre"
                     }`}
                   >
-                    {categoryLabel[test.category]}
+                    {dict.categories[test.category].name}
                   </span>
                 </Link>
               </li>
@@ -284,8 +302,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-auto border-t border-line px-5 py-6 text-center text-xs text-ink-soft desktop:px-8">
-        © {new Date().getFullYear()} Know Yourself. Тести створено в освітніх цілях і не замінюють
-        консультацію фахівця.
+        {dict.common.footer(new Date().getFullYear())}
       </footer>
     </div>
   );

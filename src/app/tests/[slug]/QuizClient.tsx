@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { getAnonId } from "@/lib/anonId";
 import { getTestResult, questionKey, questionText, type Question, type TestData } from "@/lib/scoring";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
+import type { Locale } from "@/lib/i18n/locales";
 
 interface FlatQuestion {
   scaleId: string;
@@ -40,10 +42,14 @@ export function QuizClient({
   testSlug,
   testName,
   testData,
+  locale,
+  dict,
 }: {
   testSlug: string;
   testName: string;
   testData: TestData;
+  locale: Locale;
+  dict: Dictionary["quiz"];
 }) {
   const router = useRouter();
   const [questions] = useState(() => flattenQuestions(testData));
@@ -72,7 +78,7 @@ export function QuizClient({
         scaleScores[scale.id] = (sum / scaleAnswers.length) * 20;
       }
 
-      const result = await getTestResult(testSlug, scaleScores);
+      const result = await getTestResult(testSlug, scaleScores, locale);
       const anonId = getAnonId();
 
       const response = await fetch("/api/attempts", {
@@ -81,18 +87,18 @@ export function QuizClient({
         body: JSON.stringify({ anonId, testSlug, answers: finalAnswers, result }),
       });
 
-      if (!response.ok) throw new Error("Не вдалося зберегти результат");
+      if (!response.ok) throw new Error(dict.saveError);
 
       const { id } = (await response.json()) as { id: string };
       router.push(`/tests/${testSlug}/result?attemptId=${id}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Щось пішло не так");
+      setError(err instanceof Error ? err.message : dict.genericError);
       setSubmitting(false);
     }
   }
 
   function handleExit() {
-    if (window.confirm("Прогрес не буде збережено. Вийти?")) {
+    if (window.confirm(dict.exitConfirm)) {
       router.push("/tests");
     }
   }
@@ -113,7 +119,7 @@ export function QuizClient({
   if (total === 0) {
     return (
       <div className="mx-auto max-w-2xl px-5 py-24 text-center">
-        <p className="text-ink-soft">Для цього тесту ще не додано питань.</p>
+        <p className="text-ink-soft">{dict.noQuestions}</p>
       </div>
     );
   }
@@ -126,7 +132,7 @@ export function QuizClient({
           <button
             type="button"
             onClick={handleExit}
-            aria-label="Вийти з тесту"
+            aria-label={dict.closeAria}
             className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-sans text-ink-soft transition-colors hover:bg-ochre-soft hover:text-ochre"
           >
             <CloseIcon />
@@ -143,14 +149,16 @@ export function QuizClient({
 
       {submitting ? (
         <div className="flex flex-1 flex-col items-center justify-center gap-3 py-16 text-center">
-          <p className="font-fraunces text-xl text-ink">Рахуємо результат…</p>
+          <p className="font-fraunces text-xl text-ink">{dict.calculating}</p>
           {error && <p className="text-sm text-red-600">{error}</p>}
         </div>
       ) : (
         <div className="flex flex-1 flex-col justify-center gap-8">
           <div>
             <p className="mb-3 text-xs uppercase tracking-wide text-ink-soft">
-              Питання {currentStep + 1} з {total}
+              {dict.questionOfTemplate
+                .replace("{current}", String(currentStep + 1))
+                .replace("{total}", String(total))}
             </p>
             <h1 className="font-fraunces text-2xl leading-snug text-ink desktop:text-3xl">
               {current.text}
@@ -170,8 +178,8 @@ export function QuizClient({
             ))}
           </div>
           <div className="flex justify-between text-xs text-ink-soft">
-            <span>Не погоджуюсь</span>
-            <span>Повністю погоджуюсь</span>
+            <span>{dict.disagree}</span>
+            <span>{dict.agree}</span>
           </div>
 
           {error && <p className="text-sm text-red-600">{error}</p>}

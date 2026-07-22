@@ -1,0 +1,95 @@
+{
+  "test": "type-ab",
+  "scales": [
+    {
+      "id": "type_ab",
+      "name": "Type A/B Behavior Pattern",
+      "poles": [
+        "Type B",
+        "Type A"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "pronounced type B",
+          "text": "You're relaxed, unhurried, and rarely feel an urgent need to compete or rush. Patience and an even pace are natural traits for you.\n\nThis gives you resilience to stress and the ability to enjoy the process, not just the outcome. The risk is not enough urgency in situations where quick action is genuinely needed."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderate type B",
+          "text": "You're usually calm and unhurried, though you're capable of speeding up and showing competitiveness when the situation calls for it.\n\nThis gives you a flexible balance between relaxation and the ability to mobilize."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You combine the ability to relax with periods of intense, focused activity, depending on the context.\n\nThis gives you adaptability to different paces of work and life."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderate type A",
+          "text": "You tend toward impatience and competitiveness, though you're capable of relaxing once you recognize the need to.\n\nThis gives you drive in pursuing goals, and benefits from deliberately setting aside time to rest."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "pronounced type A",
+          "text": "You're impatient, competitive, achievement-oriented, and constantly feel time pressure. Multitasking and a fast pace are your natural norm.\n\nThis is a powerful trait for achieving ambitious goals. At the same time, it carries an elevated risk of chronic stress — deliberately planning pauses and rest is critical for long-term wellbeing, not just productivity."
+        }
+      ],
+      "questions": [
+        {
+          "id": "type_ab_q1",
+          "text": "I often feel time pressure even without a good reason."
+        },
+        {
+          "id": "type_ab_q2",
+          "text": "I'm competitive even in everyday situations."
+        },
+        {
+          "id": "type_ab_q3",
+          "text": "I find it hard to just relax and do nothing."
+        },
+        {
+          "id": "type_ab_q4",
+          "text": "I tend to do several things at once."
+        },
+        {
+          "id": "type_ab_q5",
+          "text": "Impatience is one of my characteristic traits."
+        },
+        {
+          "id": "type_ab_q6",
+          "text": "I constantly strive to achieve more."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "driven_achiever",
+      "condition": "high type_ab",
+      "title": "The Driven Achiever",
+      "text": "Your energy is focused on constant achievement and forward motion. This is a powerful trait for ambitious goals, provided you consciously look after the balance between an intense pace and recovering your resources."
+    },
+    {
+      "id": "balanced_pacer",
+      "condition": "low type_ab",
+      "title": "The Balanced Pacer",
+      "text": "You naturally keep a calm pace and rarely give in to the pressure of urgency. This gives you resilience to stress, and benefits from deliberately showing urgency where a situation genuinely calls for it."
+    }
+  ]
+}

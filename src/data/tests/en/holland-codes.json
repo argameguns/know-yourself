@@ -1,0 +1,325 @@
+{
+  "test": "holland-codes",
+  "scales": [
+    {
+      "id": "realistic",
+      "name": "Realistic Type (R)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Hands-on, physical work with tools or machinery holds little appeal for you. You prefer tasks that don't involve working with your hands or with equipment.\n\nThis isn't a shortcoming — your professional energy is simply directed elsewhere, where the hands-on component is secondary."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of handling practical, technical tasks when necessary, though they're not your main professional passion.\n\nThis gives you flexibility in roles that combine hands-on and non-hands-on components."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You enjoy working with your hands, tools, machinery, or in a physical space. A concrete, tangible result matters more to you than abstract theory.\n\nThis is a valuable trait for technical, engineering, and craft professions where hands-on skill is essential."
+        }
+      ],
+      "questions": [
+        {
+          "id": "realistic_q1",
+          "text": "I enjoy working with my hands using tools or equipment."
+        },
+        {
+          "id": "realistic_q2",
+          "text": "I prefer practical tasks over theoretical ones."
+        },
+        {
+          "id": "realistic_q3",
+          "text": "I'm curious about how machines and mechanisms work."
+        },
+        {
+          "id": "realistic_q4",
+          "text": "I get satisfaction from physical work."
+        }
+      ]
+    },
+    {
+      "id": "investigative",
+      "name": "Investigative Type (I)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Analytical research and solving complex, abstract problems aren't things you're naturally drawn to.\n\nYou're likely more effective in roles built around action or interaction rather than prolonged analysis."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of analytical thinking and research when a task calls for it, without an excessive love of pure theory.\n\nThis gives you a practical balance between analysis and action."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "You're drawn to solving complex, abstract problems through analysis, research, and systematic thinking.\n\nThis is a valuable trait for scientific, research, and analytical professions where depth of understanding matters before action."
+        }
+      ],
+      "questions": [
+        {
+          "id": "investigative_q1",
+          "text": "I enjoy analyzing complex problems."
+        },
+        {
+          "id": "investigative_q2",
+          "text": "I like figuring out why something works the way it does."
+        },
+        {
+          "id": "investigative_q3",
+          "text": "Research and experiments appeal to me."
+        },
+        {
+          "id": "investigative_q4",
+          "text": "I prefer deep analysis over a quick solution."
+        }
+      ]
+    },
+    {
+      "id": "artistic",
+      "name": "Artistic Type (A)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Creative self-expression and unconventional, unstructured forms of activity aren't your main interest.\n\nYou likely feel better in structured, predictable work formats."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You value creativity to a moderate degree, pairing it with more structured approaches to work.\n\nThis gives you flexibility between creativity and practical execution."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Creative self-expression, originality, and aesthetics matter to you. You seek unconventional solutions and dislike rigid constraints.\n\nThis is a valuable trait for creative, design, and artistic professions, where originality is valued over conformity."
+        }
+      ],
+      "questions": [
+        {
+          "id": "artistic_q1",
+          "text": "Creative self-expression matters to me."
+        },
+        {
+          "id": "artistic_q2",
+          "text": "I enjoy coming up with unconventional solutions."
+        },
+        {
+          "id": "artistic_q3",
+          "text": "Aesthetics and beauty matter to me."
+        },
+        {
+          "id": "artistic_q4",
+          "text": "I prefer freedom of expression over rigid constraints."
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social Type (S)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Work centered on directly helping or teaching others isn't your main professional interest.\n\nYou're likely more effective in roles that call for independent or technical work."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of, and enjoy, occasionally helping or teaching others, combining this with other kinds of activity.\n\nThis gives you a balance between social interaction and individual work."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Helping, teaching, and caring about others' development matter to you professionally. You naturally gravitate toward roles where you can have an impact on people's wellbeing.\n\nThis is a valuable trait for teaching, counseling, and social professions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "social_q1",
+          "text": "I enjoy helping other people."
+        },
+        {
+          "id": "social_q2",
+          "text": "I get satisfaction from teaching or mentoring others."
+        },
+        {
+          "id": "social_q3",
+          "text": "Caring about people's wellbeing matters to me."
+        },
+        {
+          "id": "social_q4",
+          "text": "I enjoy working as a team toward a shared goal."
+        }
+      ]
+    },
+    {
+      "id": "enterprising",
+      "name": "Enterprising Type (E)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Leadership, persuasion, and competitive business activity aren't your main interest.\n\nYou likely feel better in roles that don't require constantly persuading or managing others."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of taking on a leadership role or negotiating when necessary, without constantly seeking it out.\n\nThis gives you flexibility between leading and executing."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Leadership, persuasion, negotiation, and pursuing ambitious goals naturally appeal to you.\n\nThis is a valuable trait for management, entrepreneurial, and sales professions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "enterprising_q1",
+          "text": "I enjoy leading others."
+        },
+        {
+          "id": "enterprising_q2",
+          "text": "I easily persuade people of my point of view."
+        },
+        {
+          "id": "enterprising_q3",
+          "text": "Achieving ambitious goals motivates me."
+        },
+        {
+          "id": "enterprising_q4",
+          "text": "I'm comfortable negotiating."
+        }
+      ]
+    },
+    {
+      "id": "conventional",
+      "name": "Conventional Type (C)",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Structured, detail-oriented work with data or documents isn't your main interest.\n\nYou likely feel better in roles with more freedom and fewer fixed procedures."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You're capable of working with clear procedures and data when necessary, combining this with other kinds of activity.\n\nThis gives you a balance between structure and flexibility."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Precision, order, and clear procedures matter to you. You feel comfortable working with data, documents, and structured systems.\n\nThis is a valuable trait for administrative, financial, and operational professions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "conventional_q1",
+          "text": "I enjoy working within clear structures and procedures."
+        },
+        {
+          "id": "conventional_q2",
+          "text": "Precision and order matter to me at work."
+        },
+        {
+          "id": "conventional_q3",
+          "text": "I prefer clear instructions over ambiguity."
+        },
+        {
+          "id": "conventional_q4",
+          "text": "Working with data or documents doesn't bother me."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "builder_analyst",
+      "condition": "realistic + investigative",
+      "title": "The Investigator-Builder",
+      "text": "You combine a love of hands-on, tangible work with an analytical approach to solving problems. This combination is typical of engineering, technical, and applied science professions."
+    },
+    {
+      "id": "creative_helper",
+      "condition": "artistic + social",
+      "title": "The Creative Mentor",
+      "text": "Creative self-expression is paired with a desire to help others. This combination is common among art therapists, arts educators, and people who teach through creative work."
+    },
+    {
+      "id": "strategic_leader",
+      "condition": "enterprising + investigative",
+      "title": "The Strategic Leader",
+      "text": "Analytical thinking is paired with entrepreneurial energy. This combination is typical of consulting, strategic management, and data-driven business development."
+    },
+    {
+      "id": "structured_helper",
+      "condition": "conventional + social",
+      "title": "The Systematic Helper",
+      "text": "A drive for order is paired with a desire to help people. This combination is common among social-services administrators, education-program coordinators, and HR professionals."
+    },
+    {
+      "id": "visionary_builder",
+      "condition": "artistic + realistic",
+      "title": "The Visionary Maker",
+      "text": "Creative vision is paired with a practical ability to turn ideas into material form. This combination is typical of product designers, architects, and craftspeople with an artistic bent."
+    }
+  ]
+}

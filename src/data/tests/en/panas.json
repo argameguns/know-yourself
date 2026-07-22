@@ -1,0 +1,115 @@
+{
+  "test": "panas",
+  "scales": [
+    {
+      "id": "positive_affect",
+      "name": "Positive Affect",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Lately you rarely feel enthusiasm, inspiration, or pronounced joy. Your emotional tone is more neutral or subdued than uplifted.\n\nThis is a temporary emotional snapshot, not a fixed personality trait. If this state persists for a long time and troubles you, it's worth paying attention to and, if needed, talking to a professional."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You experience a moderate level of positive emotion — enthusiasm, joy, or inspiration — depending on recent circumstances.\n\nThis is a typical emotional baseline that naturally fluctuates with the events in your life."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Lately you often feel enthusiasm, inspiration, and pronounced joy. Positive energy dominates your emotional tone.\n\nThis is a valuable resource for productivity and relationships with those around you during this period."
+        }
+      ],
+      "questions": [
+        {
+          "id": "positive_affect_q1",
+          "text": "Lately I've often felt enthusiastic."
+        },
+        {
+          "id": "positive_affect_q2",
+          "text": "I've been feeling joyful a lot lately."
+        },
+        {
+          "id": "positive_affect_q3",
+          "text": "I feel inspired by everyday things."
+        },
+        {
+          "id": "positive_affect_q4",
+          "text": "Overall my mood has been upbeat lately."
+        }
+      ]
+    },
+    {
+      "id": "negative_affect",
+      "name": "Negative Affect",
+      "bands": [
+        {
+          "range": [
+            0,
+            30
+          ],
+          "label": "low",
+          "text": "Lately you rarely feel anxiety, irritation, or guilt. Your emotional tone is calm, without notable distress.\n\nThis is a favorable emotional period that gives you room for focused, productive activity."
+        },
+        {
+          "range": [
+            31,
+            60
+          ],
+          "label": "average",
+          "text": "You sometimes feel anxiety, irritation, or other negative emotions, depending on recent circumstances.\n\nThis is a typical level that naturally fluctuates with life events."
+        },
+        {
+          "range": [
+            61,
+            100
+          ],
+          "label": "high",
+          "text": "Lately you often feel anxiety, irritation, guilt, or other difficult emotions. This may reflect elevated strain or stress in this period of your life.\n\nThis is an important signal to pay attention to the sources of this state. If the negative emotions are intense and persistent, talking to someone close to you or a professional can help significantly."
+        }
+      ],
+      "questions": [
+        {
+          "id": "negative_affect_q1",
+          "text": "Lately I've often felt anxious."
+        },
+        {
+          "id": "negative_affect_q2",
+          "text": "Something has often been irritating me lately."
+        },
+        {
+          "id": "negative_affect_q3",
+          "text": "I feel guilty more often than I'd like."
+        },
+        {
+          "id": "negative_affect_q4",
+          "text": "My emotional state has felt tense lately."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "thriving",
+      "condition": "high positive_affect + low negative_affect",
+      "title": "Emotional Upswing",
+      "text": "Your current emotional state is marked by high positive energy and low stress. This is a favorable period for new initiatives and deep engagement with the things that matter to you."
+    },
+    {
+      "id": "under_pressure",
+      "condition": "low positive_affect + high negative_affect",
+      "title": "A Period of Heightened Strain",
+      "text": "Your current emotional state points to elevated stress and reduced positive energy. This is an important signal to focus on recovery — through rest, support from loved ones, or talking to a professional."
+    }
+  ]
+}

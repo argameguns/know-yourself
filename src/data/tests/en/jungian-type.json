@@ -1,0 +1,303 @@
+{
+  "test": "jungian-type",
+  "scales": [
+    {
+      "id": "energy",
+      "name": "Source of Energy",
+      "poles": [
+        "Introversion",
+        "Extraversion"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "pronounced introversion",
+          "text": "You recharge alone, and prolonged social activity drains you. Your inner world of thoughts and reflection matters more to you than external activity.\n\nThis gives you depth in individual work and thoughtful decision-making, free from the rush of outside pressure."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderate introversion",
+          "text": "You prefer small groups or working alone, though you're periodically comfortable in a more active social setting.\n\nThis gives you a balance between deep focus and enough social flexibility."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You feel equally comfortable alone and in company, depending on the context and the needs of the moment.\n\nThis is a versatile trait that lets you adapt to different work formats."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderate extraversion",
+          "text": "Socializing usually energizes you, though you also value periods of solitude to recharge.\n\nThis gives you activity in social interactions with enough room for personal reflection."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "pronounced extraversion",
+          "text": "Interacting with people is your main source of energy. You think out loud, working through ideas with others, and feel most alive in an active social setting.\n\nThis is a valuable trait for communication-oriented roles, and benefits from deliberately setting aside time for solitary reflection."
+        }
+      ],
+      "questions": [
+        {
+          "id": "energy_q1",
+          "text": "I get energy from talking with people."
+        },
+        {
+          "id": "energy_q2",
+          "text": "I like being the center of attention."
+        },
+        {
+          "id": "energy_q3",
+          "text": "I easily start conversations with strangers."
+        },
+        {
+          "id": "energy_q4",
+          "text": "I feel more alive in company than alone."
+        }
+      ]
+    },
+    {
+      "id": "information",
+      "name": "How You Take In Information",
+      "poles": [
+        "Sensing",
+        "Intuition"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "pronounced sensing",
+          "text": "You trust concrete facts, details, and practical experience more than abstract theories or possibilities.\n\nThis gives you precision when working with real, tangible data and practical effectiveness in getting tasks done."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderate sensing",
+          "text": "You prefer concreteness, though you're capable of considering abstract ideas when necessary.\n\nThis gives you a practical foundation with enough flexibility of thought."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You value concrete facts and abstract possibilities equally, depending on the task.\n\nThis gives you versatility in your approach to solving problems."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderate intuition",
+          "text": "You're drawn to patterns, possibilities, and abstract ideas more than to pure facts.\n\nThis gives you the ability to see hidden connections and potential in situations."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "pronounced intuition",
+          "text": "You naturally think in abstract concepts, possibilities, and future scenarios, often getting ahead of the concrete details of the present moment.\n\nThis is a valuable trait for strategic and conceptual thinking, and benefits from deliberately grounding yourself in specifics where that matters."
+        }
+      ],
+      "questions": [
+        {
+          "id": "information_q1",
+          "text": "I'm more interested in possibilities than facts."
+        },
+        {
+          "id": "information_q2",
+          "text": "I easily spot patterns and connections between ideas."
+        },
+        {
+          "id": "information_q3",
+          "text": "I find it more interesting to imagine the future than analyze the present."
+        },
+        {
+          "id": "information_q4",
+          "text": "Abstract theories appeal to me more than concrete details."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "name": "How You Make Decisions",
+      "poles": [
+        "Thinking",
+        "Feeling"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "pronounced thinking",
+          "text": "You make decisions based on logic and objective analysis, often setting the emotional factor aside as less significant.\n\nThis gives you clarity and consistency in complex decisions, and benefits from attention to how those decisions emotionally affect others."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderate thinking",
+          "text": "You prefer logical analysis, though you do factor in the human element for important decisions.\n\nThis gives you a balanced approach between objectivity and care for people."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You weigh logic and feeling equally when making decisions, depending on the context.\n\nThis gives you flexibility across different types of situations — from technical to interpersonal."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderate feeling",
+          "text": "You weigh a decision's impact on people alongside logical analysis, often favoring harmony.\n\nThis gives you sensitivity to the human dimension of decisions."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "pronounced feeling",
+          "text": "You make decisions primarily through the lens of values and impact on people, rather than abstract logic.\n\nThis is a valuable trait for roles that require empathy, and benefits from structured analysis where a decision calls for objectivity."
+        }
+      ],
+      "questions": [
+        {
+          "id": "decisions_q1",
+          "text": "When making a decision, I consider how it will affect people's feelings."
+        },
+        {
+          "id": "decisions_q2",
+          "text": "Harmony in relationships matters more to me than cold logic."
+        },
+        {
+          "id": "decisions_q3",
+          "text": "I trust my values more than objective analysis."
+        },
+        {
+          "id": "decisions_q4",
+          "text": "It matters to me that a decision accounts for the human factor."
+        }
+      ]
+    },
+    {
+      "id": "lifestyle",
+      "name": "How You Organize Your Life",
+      "poles": [
+        "Judging",
+        "Perceiving"
+      ],
+      "bands": [
+        {
+          "range": [
+            0,
+            20
+          ],
+          "label": "pronounced judging",
+          "text": "You seek structure, planning, and closure. Uncertainty and open questions are uncomfortable for you.\n\nThis gives you reliability and consistency in getting things done, and benefits from more flexibility in unpredictable situations."
+        },
+        {
+          "range": [
+            21,
+            40
+          ],
+          "label": "moderate judging",
+          "text": "You prefer planning, though you're capable of adapting when circumstances call for it.\n\nThis gives you structure with enough flexibility."
+        },
+        {
+          "range": [
+            41,
+            60
+          ],
+          "label": "balanced",
+          "text": "You feel equally comfortable with a clear plan and with open-ended possibilities.\n\nThis gives you adaptability across different working styles."
+        },
+        {
+          "range": [
+            61,
+            80
+          ],
+          "label": "moderate perceiving",
+          "text": "You prefer flexibility and openness to new options, though you're capable of sticking to a plan when it matters.\n\nThis gives you adaptability with enough capacity to see things through to completion."
+        },
+        {
+          "range": [
+            81,
+            100
+          ],
+          "label": "pronounced perceiving",
+          "text": "You value spontaneity, flexibility, and openness to new possibilities over rigid plans and closure.\n\nThis gives you adaptability to change, and benefits from light structures that help you finish important things without losing your spontaneity."
+        }
+      ],
+      "questions": [
+        {
+          "id": "lifestyle_q1",
+          "text": "I prefer flexibility over a rigid plan."
+        },
+        {
+          "id": "lifestyle_q2",
+          "text": "I'm comfortable with open, unresolved questions."
+        },
+        {
+          "id": "lifestyle_q3",
+          "text": "I adapt easily to unexpected changes of plan."
+        },
+        {
+          "id": "lifestyle_q4",
+          "text": "Spontaneity appeals to me more than structure."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "strategic_architect",
+      "condition": "intuition + thinking + judging",
+      "title": "The Strategic Architect",
+      "text": "You combine abstract thinking with logical analysis and a drive for structure. This gives you the ability to see long-term systemic solutions and consistently bring them to life."
+    },
+    {
+      "id": "empathic_mediator",
+      "condition": "intuition + feeling + perceiving",
+      "title": "The Empathic Mediator",
+      "text": "Intuitive understanding of people is paired with flexibility and a concern for harmony in you. You naturally sense the undertones in relationships and adapt to the needs of the moment."
+    },
+    {
+      "id": "practical_executor",
+      "condition": "sensing + thinking + judging",
+      "title": "The Practical Executor",
+      "text": "Concreteness and logic are paired with a drive for structure and closure in you. You effectively turn plans into reality, relying on facts rather than assumptions."
+    },
+    {
+      "id": "warm_facilitator",
+      "condition": "sensing + feeling + perceiving",
+      "title": "The Warm Facilitator",
+      "text": "Practicality is paired with sensitivity to people and flexibility in you. You're attentive to the concrete needs of those around you and adapt easily to changing circumstances."
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "test": "via-strengths",
+  "note": "VIA identifies 24 character strengths grouped into 6 virtues. Below is the text for each of the 6 groups, based on the highest-scoring virtue in each.",
+  "scales": [
+    {
+      "id": "wisdom",
+      "name": "Wisdom and Knowledge (creativity, curiosity, judgment, love of learning, perspective)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Intellectual curiosity and a drive for deep understanding aren't among your leading traits. You likely rely on other strengths when working through problems.\n\nThis isn't a shortcoming — your energy is simply channeled naturally into other areas of strength."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You have a healthy curiosity for new knowledge and the ability to think creatively, even though it isn't your dominant trait.\n\nThis gives you a balanced approach to learning and problem-solving."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "Curiosity, a love of learning, and the ability to see a situation from multiple angles are pronounced strengths of yours. You naturally seek to understand things more deeply than the surface level.\n\nThis is a valuable trait for roles that require analysis, teaching others, or creative problem-solving."
+        }
+      ],
+      "questions": [
+        {
+          "id": "wisdom_q1",
+          "text": "I enjoy learning about new topics purely for the sake of knowing."
+        },
+        {
+          "id": "wisdom_q2",
+          "text": "I'm able to look at a situation from different points of view."
+        },
+        {
+          "id": "wisdom_q3",
+          "text": "Creative solutions to problems come easily to me."
+        },
+        {
+          "id": "wisdom_q4",
+          "text": "I'm curious about things outside my own field of work."
+        }
+      ]
+    },
+    {
+      "id": "courage",
+      "name": "Courage (bravery, perseverance, honesty, zest)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Risk-taking, confrontation, and prolonged struggle with hardship aren't among your natural strengths.\n\nYou're likely more effective where you can act cautiously and gradually, without needing to take bold, decisive leaps."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're able to show courage and perseverance when a situation calls for it, without an excessive appetite for risk.\n\nThis gives you a sensible balance between caution and boldness."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "Bravery in the face of hardship, perseverance in pursuing goals, and honesty even in difficult situations are pronounced traits of yours.\n\nThis is a valuable strength for roles that require overcoming obstacles and standing up for the truth even under pressure."
+        }
+      ],
+      "questions": [
+        {
+          "id": "courage_q1",
+          "text": "I'm willing to stand up for the truth, even when it's difficult."
+        },
+        {
+          "id": "courage_q2",
+          "text": "Hardship doesn't make me give up."
+        },
+        {
+          "id": "courage_q3",
+          "text": "I act decisively even in frightening situations."
+        },
+        {
+          "id": "courage_q4",
+          "text": "I'm honest, even when the truth is unwelcome."
+        }
+      ]
+    },
+    {
+      "id": "humanity",
+      "name": "Humanity (love, kindness, social intelligence)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Deep emotional closeness and caring for others aren't among your leading traits — you likely build relationships on other foundations.\n\nThis doesn't mean you're cold, just that your relational energy shows up differently."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're capable of genuine care and warm relationships, even though it isn't the trait that dominates your character.\n\nThis gives you a balanced approach to interpersonal relationships."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "The capacity to love and be loved, genuine kindness, and a nuanced understanding of other people's emotions are pronounced strengths of yours.\n\nThis is a valuable trait for roles that require deep care for people and the ability to understand their unspoken needs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "humanity_q1",
+          "text": "I easily pick up on other people's emotions."
+        },
+        {
+          "id": "humanity_q2",
+          "text": "Caring for the people close to me is an important part of my life."
+        },
+        {
+          "id": "humanity_q3",
+          "text": "I enjoy showing kindness to strangers."
+        },
+        {
+          "id": "humanity_q4",
+          "text": "I know how to genuinely support someone through a hard time."
+        }
+      ]
+    },
+    {
+      "id": "justice",
+      "name": "Justice (teamwork, fairness, leadership)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Group dynamics, leading a team, or ensuring fairness aren't among your leading strengths.\n\nYou're likely more effective working individually than in formal team roles."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're able to work effectively as part of a team and show fairness when the situation calls for it.\n\nThis gives you a solid foundation for teamwork without needing to lead constantly."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "A natural ability to bring people together, ensure fair treatment, and lead a team toward a shared goal are pronounced strengths of yours.\n\nThis is a valuable trait for management and coordination roles."
+        }
+      ],
+      "questions": [
+        {
+          "id": "justice_q1",
+          "text": "I naturally take on the role of organizer in a group."
+        },
+        {
+          "id": "justice_q2",
+          "text": "Treating everyone fairly matters a great deal to me."
+        },
+        {
+          "id": "justice_q3",
+          "text": "I enjoy working toward a team's shared goal."
+        },
+        {
+          "id": "justice_q4",
+          "text": "I'm good at rallying people around an idea."
+        }
+      ]
+    },
+    {
+      "id": "temperance",
+      "name": "Temperance (forgiveness, humility, prudence, self-regulation)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Restraint, caution, and impulse control aren't among your leading traits — you likely act more spontaneously.\n\nThis gives you energy and flexibility, with room to benefit from building more self-control in situations that call for it."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're capable of prudence and self-control when needed, without being overly restrained in everyday life.\n\nThis gives you a balance between spontaneity and discipline."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "Self-control, prudence, and the capacity to forgive are pronounced strengths of yours. You rarely act impulsively and approach decisions thoughtfully.\n\nThis is a valuable trait for roles that require stability and composure under pressure."
+        }
+      ],
+      "questions": [
+        {
+          "id": "temperance_q1",
+          "text": "I control my impulses well."
+        },
+        {
+          "id": "temperance_q2",
+          "text": "I readily forgive people their shortcomings."
+        },
+        {
+          "id": "temperance_q3",
+          "text": "I approach decisions thoughtfully, without rushing."
+        },
+        {
+          "id": "temperance_q4",
+          "text": "Humility matters more to me than recognition."
+        }
+      ]
+    },
+    {
+      "id": "transcendence",
+      "name": "Transcendence (appreciation of beauty, gratitude, hope, humor, spirituality)",
+      "bands": [
+        {
+          "range": [
+            0,
+            40
+          ],
+          "label": "low",
+          "text": "Searching for deeper meaning, gratitude for small things, or an aesthetic appreciation of the world aren't among your leading traits.\n\nYou're likely more pragmatically oriented toward concrete outcomes than toward the broader meaning of events."
+        },
+        {
+          "range": [
+            41,
+            70
+          ],
+          "label": "average",
+          "text": "You're capable of feeling gratitude and seeing beauty in life, even though it isn't a dominant trait of your character.\n\nThis gives you a balanced relationship with meaning and beauty in everyday life."
+        },
+        {
+          "range": [
+            71,
+            100
+          ],
+          "label": "high",
+          "text": "Deep gratitude, hope for a better future, and the ability to see beauty and meaning in everyday life are pronounced strengths of yours.\n\nThis is a valuable trait for sustaining your own inner resilience and inspiring others through your optimism."
+        }
+      ],
+      "questions": [
+        {
+          "id": "transcendence_q1",
+          "text": "I often feel grateful for simple things in life."
+        },
+        {
+          "id": "transcendence_q2",
+          "text": "I'm able to see beauty in the everyday."
+        },
+        {
+          "id": "transcendence_q3",
+          "text": "Humor helps me get through hard times."
+        },
+        {
+          "id": "transcendence_q4",
+          "text": "I feel connected to something bigger than myself."
+        }
+      ]
+    }
+  ],
+  "portraits": [
+    {
+      "id": "wise_leader",
+      "condition": "high wisdom + high justice",
+      "title": "The Wise Steward",
+      "text": "A deep understanding of things pairs, in you, with a natural ability to lead a team. This combination is typical of people who make thoughtful, long-term decisions for the good of the group."
+    },
+    {
+      "id": "compassionate_warrior",
+      "condition": "high courage + high humanity",
+      "title": "The Compassionate Warrior",
+      "text": "Bravery pairs, in you, with deep care for people. You're willing to stand up for fairness and protect those who need it, without losing your empathy."
+    },
+    {
+      "id": "grounded_optimist",
+      "condition": "high temperance + high transcendence",
+      "title": "The Grounded Optimist",
+      "text": "Self-control pairs, in you, with gratitude and hope. You maintain inner stability while still finding meaning and beauty even in difficult circumstances."
+    }
+  ]
+}
