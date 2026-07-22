@@ -1,68 +1,12 @@
-type Category = "personality" | "career" | "strengths" | "relationships";
+import Link from "next/link";
+import { categories, categoryColor, categoryLabel, tests, type Category } from "@/lib/testsCatalog";
 
-const categoryLabel: Record<Category, string> = {
-  personality: "Особистість",
-  career: "Кар'єра",
-  strengths: "Сильні сторони",
-  relationships: "Стосунки",
+const categoryIcon: Record<Category, React.ReactNode> = {
+  personality: <PersonalityIcon />,
+  career: <CareerIcon />,
+  strengths: <StrengthsIcon />,
+  relationships: <RelationshipsIcon />,
 };
-
-const categoryColor: Record<Category, "pine" | "ochre"> = {
-  personality: "pine",
-  career: "ochre",
-  strengths: "pine",
-  relationships: "ochre",
-};
-
-const tests: { slug: string; name: string; category: Category }[] = [
-  { slug: "big-five", name: "Big Five", category: "personality" },
-  { slug: "hexaco", name: "HEXACO", category: "personality" },
-  { slug: "jungian-type", name: "Юнгіанський тип", category: "personality" },
-  { slug: "four-temperaments", name: "Чотири темпераменти", category: "personality" },
-  { slug: "type-ab", name: "Type A/B Personality", category: "personality" },
-  { slug: "holland-codes", name: "Holland Codes", category: "career" },
-  { slug: "work-values", name: "Робочі цінності", category: "career" },
-  { slug: "locus-of-control", name: "Locus of Control", category: "career" },
-  { slug: "via-strengths", name: "VIA Character Strengths", category: "strengths" },
-  { slug: "grit", name: "Grit Scale", category: "strengths" },
-  { slug: "self-esteem", name: "Rosenberg Self-Esteem", category: "strengths" },
-  { slug: "emotional-intelligence", name: "Emotional Intelligence", category: "strengths" },
-  { slug: "attachment-style", name: "Attachment Style", category: "relationships" },
-  { slug: "panas", name: "PANAS", category: "relationships" },
-  { slug: "hsp", name: "Highly Sensitive Person", category: "relationships" },
-];
-
-const categories: {
-  id: Category;
-  name: string;
-  description: string;
-  icon: React.ReactNode;
-}[] = [
-  {
-    id: "personality",
-    name: "Особистість",
-    description: "Риси характеру і темперамент",
-    icon: <PersonalityIcon />,
-  },
-  {
-    id: "career",
-    name: "Кар'єра",
-    description: "Інтереси, цінності та мотивація",
-    icon: <CareerIcon />,
-  },
-  {
-    id: "strengths",
-    name: "Сильні сторони",
-    description: "Чесноти, стійкість і ресурси",
-    icon: <StrengthsIcon />,
-  },
-  {
-    id: "relationships",
-    name: "Стосунки",
-    description: "Прив'язаність і емоційна чутливість",
-    icon: <RelationshipsIcon />,
-  },
-];
 
 const radarExample = [
   { label: "Відкр.", value: 78 },
@@ -259,18 +203,18 @@ export default function Home() {
             стосунки. Без реєстрації, без оплати — результат одразу.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#tests"
+            <Link
+              href="/onboarding"
               className="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-pine"
             >
               Почати опитування
-            </a>
-            <a
-              href="#tests"
+            </Link>
+            <Link
+              href="/tests"
               className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-ink"
             >
               Переглянути всі тести
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -288,20 +232,23 @@ export default function Home() {
           {categories.map((cat) => {
             const color = categoryColor[cat.id];
             return (
-              <div
+              <Link
                 key={cat.id}
-                className={`rounded-2xl p-5 ${color === "pine" ? "bg-pine-soft" : "bg-ochre-soft"}`}
+                href={`/tests?category=${cat.id}`}
+                className={`rounded-2xl p-5 transition-opacity hover:opacity-90 ${
+                  color === "pine" ? "bg-pine-soft" : "bg-ochre-soft"
+                }`}
               >
                 <div
                   className={`mb-4 flex h-9 w-9 items-center justify-center rounded-lg ${
                     color === "pine" ? "bg-pine text-paper" : "bg-ochre text-paper"
                   }`}
                 >
-                  {cat.icon}
+                  {categoryIcon[cat.id]}
                 </div>
                 <p className="font-fraunces text-base text-ink">{cat.name}</p>
                 <p className="mt-1 text-xs text-ink-soft">{cat.description}</p>
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -313,18 +260,23 @@ export default function Home() {
           {tests.map((test, index) => {
             const color = categoryColor[test.category];
             return (
-              <li key={test.slug} className="flex items-center gap-4 py-4">
-                <span className="w-8 shrink-0 font-fraunces text-sm text-ink-soft">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="flex-1 font-fraunces text-base text-ink">{test.name}</span>
-                <span
-                  className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
-                    color === "pine" ? "bg-pine-soft text-pine" : "bg-ochre-soft text-ochre"
-                  }`}
+              <li key={test.slug}>
+                <Link
+                  href={`/tests/${test.slug}`}
+                  className="flex items-center gap-4 py-4 transition-colors hover:bg-pine-soft/40"
                 >
-                  {categoryLabel[test.category]}
-                </span>
+                  <span className="w-8 shrink-0 font-fraunces text-sm text-ink-soft">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="flex-1 font-fraunces text-base text-ink">{test.name}</span>
+                  <span
+                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
+                      color === "pine" ? "bg-pine-soft text-pine" : "bg-ochre-soft text-ochre"
+                    }`}
+                  >
+                    {categoryLabel[test.category]}
+                  </span>
+                </Link>
               </li>
             );
           })}

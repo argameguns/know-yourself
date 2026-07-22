@@ -21,27 +21,38 @@
  * }
  */
 
-interface Band {
+export interface Band {
   range: [number, number];
   label: string;
   text: string;
 }
 
-interface Scale {
+export type Question = string | { id: string; text: string };
+
+export interface Scale {
   id: string;
   name: string;
   poles?: [string, string];
   bands: Band[];
+  questions?: Question[];
 }
 
-interface Portrait {
+export function questionText(question: Question): string {
+  return typeof question === "string" ? question : question.text;
+}
+
+export function questionKey(scaleId: string, question: Question, index: number): string {
+  return typeof question === "string" ? `${scaleId}__${index}` : `${scaleId}__${question.id}`;
+}
+
+export interface Portrait {
   id: string;
   condition: string;
   title: string;
   text: string;
 }
 
-interface TestData {
+export interface TestData {
   test: string;
   note?: string;
   scales: Scale[];
